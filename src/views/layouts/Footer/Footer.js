@@ -1,0 +1,35 @@
+import React from 'react';
+
+import { name } from '../../../../config/siteConfig';
+import { copyright, business, author } from '../../../../config/socialConfig';
+
+import './Footer.styl';
+
+const Footer = () => (
+    <footer>
+        <div className='container'>
+            <div>
+                {copyright}
+                {` `}
+                <a
+                    href={business.networks.github}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    {name}
+                </a>
+                <br />
+                <span>by </span>
+                <a
+                    href={author.networks.github}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    {author.username}
+                </a>
+            </div>
+        </div>
+    </footer>
+);
+
+export default Footer;
