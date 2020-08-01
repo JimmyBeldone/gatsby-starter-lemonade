@@ -7028,12 +7028,12 @@ gatsby-page-utils@^0.2.19:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-breakpoints@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breakpoints/-/gatsby-plugin-breakpoints-1.2.0.tgz#933c764d8e9ec85ac8514a94385f2715725bf125"
-  integrity sha512-E9snE3F2PaFRLJEeQXzWX/BXVO+ov2ZVQquPNPTDtSqLCG7F33nE+lnU6uWtTQJNjIfDebQpxXDOsYK7BPdmlA==
+gatsby-plugin-breakpoints@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breakpoints/-/gatsby-plugin-breakpoints-1.2.1.tgz#704e4c2ca1bce616c11332955afe113ed48f859d"
+  integrity sha512-shN6YylWwpjrEde1TRMcdZxVsyeG/UXHi4vbRnWqvU0cmStrRYlJTQM0Zi1CjNSk1cPzzXYLl0YWUijeAK8MiA==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.11.0"
 
 gatsby-plugin-eslint@2.0.8:
   version "2.0.8"
