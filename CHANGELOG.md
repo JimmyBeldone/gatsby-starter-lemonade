@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.9...v1.0.10) (2020-08-12)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([6a3bc52](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/6a3bc52741aa067e8855957d67692ae8869782c1))
+
 ## [1.0.9](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.8...v1.0.9) (2020-08-11)
 
 
