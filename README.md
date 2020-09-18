@@ -1,17 +1,19 @@
-<h1 align="center" style="border-bottom: none;">Gatsby Reapt</h1>
-<h3 align="center">A Gatsby starter with i18n, SEO ready, GDPR consent</h3>
+<h1 align="center" style="border-bottom: none;">Gatsby Starter Lemonade</h1>
+<!-- <h3 align="center">A Gatsby starter with i18n, SEO ready, GDPR consent</h3> -->
 <p align="center">
-    <a href="https://travis-ci.com/JimmyBeldone/gatsby-reapt">
-        <img alt="travis build" src="https://travis-ci.com/JimmyBeldone/gatsby-reapt.svg?branch=master">
+    <a href="https://travis-ci.com/JimmyBeldone/gatsby-starter-lemonade">
+        <img alt="travis build" src="https://travis-ci.com/JimmyBeldone/gatsby-starter-lemonade.svg?branch=master">
     </a>
     <a href="#badge">
-        <img alt="release number" src="https://badgen.net/github/release/JimmyBeldone/gatsby-reapt/stable">
+        <img alt="release number" src="https://badgen.net/github/release/JimmyBeldone/gatsby-starter-lemonade/stable">
     </a>
     <a href="#badge">
-        <img alt="dependencies status" src="https://badgen.net/david/dep/JimmyBeldone/gatsby-reapt">
+        <!-- <img alt="dependencies status" src="https://badgen.net/david/dep/JimmyBeldone/gatsby-starter-lemonade"> -->
+        <img alt="dependencies status" src="https://david-dm.org/JimmyBeldone/gatsby-starter-lemonade.svg">
     </a>
     <a href="#badge">
-        <img alt="dev dependencies status" src="https://badgen.net/david/dev/JimmyBeldone/gatsby-reapt">
+        <!-- <img alt="dev dependencies status" src="https://badgen.net/david/dev/JimmyBeldone/gatsby-starter-lemonade"> -->
+        <img alt="dev dependencies status" src="https://david-dm.org/JimmyBeldone/gatsby-starter-lemonade/dev-status.svg">
     </a>
 </p>
 <p align="center">
@@ -24,8 +26,8 @@
     <a href="https://github.com/prettier/prettier">
         <img alt="prettier" src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg">
     </a>
-    <a href="https://github.com/JimmyBeldone/gatsby-reapt/blob/master/LICENSE">
-        <img alt="license" src="https://badgen.net/github/license/JimmyBeldone/gatsby-reapt">
+    <a href="https://github.com/JimmyBeldone/gatsby-starter-lemonade/blob/master/LICENSE">
+        <img alt="license" src="https://badgen.net/github/license/JimmyBeldone/gatsby-starter-lemonade">
     </a>
 </p>
 
