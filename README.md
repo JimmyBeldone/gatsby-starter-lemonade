@@ -31,6 +31,14 @@
     </a>
 </p>
 
+## Installation
+
+1. Clone this repo `git clone https://github.com/JimmyBeldone/gatsby-starter-lemonade.git`
+2. Run `yarn setup` (install dependencies & remove .git folder) and follow the instructions
+3. Configure semantic-release with semantic-release-cli : `npx semantic-release-cli setup`.
+![semantic-release-cli](https://github.com/semantic-release/semantic-release/raw/master/media/semantic-release-cli.png)
+4. You're all set !
+
 ## License
 
 MIT
