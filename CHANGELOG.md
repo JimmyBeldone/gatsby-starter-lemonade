@@ -1,3 +1,12 @@
+## [1.0.13](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.12...v1.0.13) (2020-09-28)
+
+
+### Bug Fixes
+
+* remove travis ([9a50838](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/9a508384de64a784c7dfc09977f8906737417aca))
+* update dependencies ([e19dc6b](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e19dc6bbb1376d8e403a71dccf364ecc344dc668))
+* update dependencies ([7af31fb](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/7af31fb61004e938273257288d001ba7e3028a54))
+
 ## [1.0.12](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.11...v1.0.12) (2020-09-18)
 
 
