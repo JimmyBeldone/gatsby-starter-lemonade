@@ -1,8 +1,8 @@
 <h1 align="center" style="border-bottom: none;">Gatsby Starter Lemonade</h1>
 <!-- <h3 align="center">A Gatsby starter with i18n, SEO ready, GDPR consent</h3> -->
 <p align="center">
-    <a href="https://travis-ci.com/JimmyBeldone/gatsby-starter-lemonade">
-        <img alt="travis build" src="https://travis-ci.com/JimmyBeldone/gatsby-starter-lemonade.svg?branch=master">
+    <a href="https://github.com/JimmyBeldone/gatsby-starter-lemonade">
+        <img alt="travis build" src="https://github.com/JimmyBeldone/gatsby-starter-lemonade/workflows/TESTING/badge.svg">
     </a>
     <a href="#badge">
         <img alt="release number" src="https://badgen.net/github/release/JimmyBeldone/gatsby-starter-lemonade/stable">
