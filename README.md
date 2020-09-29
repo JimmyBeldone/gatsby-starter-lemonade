@@ -4,6 +4,9 @@
     <a href="https://github.com/JimmyBeldone/gatsby-starter-lemonade">
         <img alt="travis build" src="https://github.com/JimmyBeldone/gatsby-starter-lemonade/workflows/TESTING/badge.svg">
     </a>
+    <a href="https://github.com/JimmyBeldone/gatsby-starter-lemonade">
+        <img alt="travis build" src="https://github.com/JimmyBeldone/gatsby-starter-lemonade/workflows/PUBLISH/badge.svg">
+    </a>
     <a href="#badge">
         <img alt="release number" src="https://badgen.net/github/release/JimmyBeldone/gatsby-starter-lemonade/stable">
     </a>
