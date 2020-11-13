@@ -52,13 +52,6 @@ module.exports = {
             },
             resolve: `gatsby-plugin-stylus-resources`,
         },
-        {
-            options: {
-                color: `tomato`,
-                showSpinner: false,
-            },
-            resolve: `gatsby-plugin-nprogress`,
-        },
         `gatsby-transformer-sharp`,
         // {
         //     resolve: 'gatsby-schema-field-absolute-path',
