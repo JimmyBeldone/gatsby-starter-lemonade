@@ -7717,10 +7717,10 @@ gatsby-page-utils@^0.2.26:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-breakpoints@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breakpoints/-/gatsby-plugin-breakpoints-1.2.4.tgz#ba59539228805409eca05d7f9982e1ef135d2380"
-  integrity sha512-hUOwV+Xr0pf4vVQTGrbgeqjo9mcB2RM1K+By8GITwMMZu8ZDPvF6ls0MNdhQJQmdKm3PxerYTnpPPhV6GCplCQ==
+gatsby-plugin-breakpoints@1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breakpoints/-/gatsby-plugin-breakpoints-1.2.5.tgz#aa9c3436b34fe25b8287508570ce82062b2d016a"
+  integrity sha512-ok/pBIXE9t/XmqrSnLFsrgV/GF1N3ajHu6IxgIl7FuaNsYRAx22/YNbi5Q2Yrqfr//qRs7Z64BuRhwEQCdcb0A==
   dependencies:
     "@babel/runtime" "^7.11.0"
 
