@@ -1,3 +1,21 @@
+## [1.0.14](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.13...v1.0.14) (2020-11-13)
+
+
+### Bug Fixes
+
+* remove plugin from gatsby config ([2661275](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/2661275d005628cf618a07d68bf310700ddcb2cd))
+* replace .js files with .jsx ([930c1f0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/930c1f058ffe150725289be63ac7a5e23ef7c133))
+* update dependencies ([fc89c08](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/fc89c08a12b297aa1f74ecba4534fd6fd998c563))
+
+## [1.0.13](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.12...v1.0.13) (2020-09-28)
+
+
+### Bug Fixes
+
+* remove travis ([9a50838](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/9a508384de64a784c7dfc09977f8906737417aca))
+* update dependencies ([e19dc6b](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e19dc6bbb1376d8e403a71dccf364ecc344dc668))
+* update dependencies ([7af31fb](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/7af31fb61004e938273257288d001ba7e3028a54))
+
 ## [1.0.12](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.11...v1.0.12) (2020-09-18)
 
 
