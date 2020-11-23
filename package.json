@@ -49,7 +49,7 @@
     "clsx": "1.1.1",
     "gatsby": "2.26.1",
     "gatsby-image": "2.5.0",
-    "gatsby-plugin-breakpoints": "1.2.5",
+    "gatsby-plugin-breakpoints": "1.2.6",
     "gatsby-plugin-force-trailing-slashes": "1.0.4",
     "gatsby-plugin-manifest": "2.6.0",
     "gatsby-plugin-netlify": "2.5.0",
