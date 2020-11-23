@@ -1,3 +1,11 @@
+## [1.0.15](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.14...v1.0.15) (2020-11-13)
+
+
+### Bug Fixes
+
+* pin dependencies ([508dc3b](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/508dc3bc8f039fdd4c0830068c0184b7a67c26d2))
+* update gatsby to [@2](https://github.com/2).26.1 ([8623d43](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/8623d4310e705d878a1d84e9bb2f27ea63844497))
+
 ## [1.0.14](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.13...v1.0.14) (2020-11-13)
 
 
