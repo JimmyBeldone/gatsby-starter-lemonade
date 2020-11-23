@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.15...v1.0.16) (2020-11-23)
+
+
+### Bug Fixes
+
+* update dependencies ([1d4f268](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/1d4f2687e1eae7671d5460af468e45f36c376c38))
+
 ## [1.0.15](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.14...v1.0.15) (2020-11-13)
 
 
