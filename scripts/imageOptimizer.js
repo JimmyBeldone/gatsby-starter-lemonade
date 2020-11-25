@@ -4,9 +4,9 @@ const fs = require('fs-extra');
 const glob = require('glob');
 const sharp = require('sharp');
 
-// const matches = glob.sync("src/images/**/*.{png,jpg,jpeg}");
-const matches = glob.sync('src/images/**/*.{png,jpg,jpeg}', {
-    // ignore: ["src/images/parallax/**/*.{png,jpg,jpeg}"]
+// const matches = glob.sync("src/contents/images/**/*.{png,jpg,jpeg}");
+const matches = glob.sync('src/contents/images/**/*.{png,jpg,jpeg}', {
+    // ignore: ["src/contents/images/parallax/**/*.{png,jpg,jpeg}"]
 });
 
 const MAX_WIDTH = 2550;

@@ -1,3 +1,5 @@
+const path = require('path');
+
 const styleResources = require(`./src/styles/styleConfig`);
 const config = require(`./config/siteConfig`);
 
@@ -14,6 +16,19 @@ const defaultQueries = {
     md: '(max-width: 1024px)',
     sm: '(max-width: 720px)',
     xs: '(max-width: 320px)',
+};
+
+const contentsPath = path.join(__dirname, 'src', 'contents');
+
+const sourceFilesystem = (name, dir = null) => {
+    const sourcePath = dir !== null ? dir : name;
+    return {
+        options: {
+            name,
+            path: path.join(contentsPath, sourcePath),
+        },
+        resolve: 'gatsby-source-filesystem',
+    };
 };
 
 module.exports = {
@@ -39,13 +54,8 @@ module.exports = {
             },
             resolve: `gatsby-plugin-typography`,
         },
-        {
-            options: {
-                name: `images`,
-                path: `${__dirname}/src/images`,
-            },
-            resolve: `gatsby-source-filesystem`,
-        },
+        sourceFilesystem('images-app', 'images/app'),
+        sourceFilesystem('icons', 'images/icons'),
         {
             options: {
                 resources: styleResources,
@@ -59,7 +69,7 @@ module.exports = {
         //         // or c. object with named field extension
         //         dirs: {
         //             'content/assets': 'fileByAssetPath',
-        //             'src/images': 'fileByImagePath',
+        //             'src/contents/images': 'fileByImagePath',
         //         },
         //     },
         // },
@@ -73,48 +83,6 @@ module.exports = {
                 description: config.langs.default.description,
                 display: `minimal-ui`,
                 icon: config.icon,
-                icons: [
-                    {
-                        sizes: `48x48`,
-                        src: `/favicons/icon-48x48.png`,
-                        type: `image/png`,
-                    },
-                    {
-                        sizes: `72x72`,
-                        src: `/favicons/icon-72x72.png`,
-                        type: `image/png`,
-                    },
-                    {
-                        sizes: `96x96`,
-                        src: `/favicons/icon-96x96.png`,
-                        type: `image/png`,
-                    },
-                    {
-                        sizes: `144x144`,
-                        src: `/favicons/icon-144x144.png`,
-                        type: `image/png`,
-                    },
-                    {
-                        sizes: `192x192`,
-                        src: `/favicons/icon-192x192.png`,
-                        type: `image/png`,
-                    },
-                    {
-                        sizes: `256x256`,
-                        src: `/favicons/icon-256x256.png`,
-                        type: `image/png`,
-                    },
-                    {
-                        sizes: `384x384`,
-                        src: `/favicons/icon-384x384.png`,
-                        type: `image/png`,
-                    },
-                    {
-                        sizes: `512x512`,
-                        src: `/favicons/icon-512x512.png`,
-                        type: `image/png`,
-                    },
-                ],
                 lang: config.langs.default.lang,
                 localize: config.langs.others,
                 name: config.langs.default.name,
