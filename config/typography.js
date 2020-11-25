@@ -1,8 +1,8 @@
 import Typography from 'typography';
 
 export const typography = new Typography({
-    baseFontSize: `16px`,
-    baseLineHeight: 1.6,
+    baseFontSize: `18px`,
+    baseLineHeight: 1.666,
     bodyFontFamily: [
         `Lato`,
         `-apple-system`,
