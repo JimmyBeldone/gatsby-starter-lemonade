@@ -9,7 +9,6 @@ import getOpenGraphMeta from './getOpenGraphMeta';
 import getTwitterMeta from './getTwitterMeta';
 
 const SEO = ({
-    article,
     description,
     image,
     location,
@@ -47,9 +46,10 @@ const SEO = ({
     }
 
     // Image
-    const metaImage = image ? image.url : data.file.childImageSharp.fixed.src;
+    const metaImage =
+        image !== null ? image.url : data.file.childImageSharp.fixed.src;
     const metaImageUrl = siteConfig.siteUrl + metaImage;
-    const metaImageAlt = image ? image.alt : metaDescription;
+    const metaImageAlt = image !== null ? image.alt : metaDescription;
 
     // Manage 404
     if (pageType === '404') {
@@ -127,8 +127,6 @@ const SEO = ({
                 // Rest of optional meta props
                 .concat(meta)}
         >
-            {/* Set GDPR banner lang  */}
-            <script>`var tarteaucitronForceLanguage = 'fr';`</script>
             {/* Schema.org tags */}
             <script type='application/ld+json'>{JSON.stringify(jsonLd)}</script>
         </Helmet>
@@ -136,17 +134,16 @@ const SEO = ({
 };
 
 SEO.defaultProps = {
+    image: null,
     meta: [],
     pageType: 'website',
     post: null,
     product: null,
     robots: true,
-    translated: true,
 };
 
 SEO.propTypes = {
-    article: PropTypes.object,
-    description: PropTypes.string,
+    description: PropTypes.string.isRequired,
     image: PropTypes.shape({
         alt: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
