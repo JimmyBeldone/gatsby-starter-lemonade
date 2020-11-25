@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.16...v1.1.0) (2020-11-25)
+
+
+### Bug Fixes
+
+* update dependencies ([b422b78](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/b422b7804010afb4498ada3d04e73b77fc18ef83))
+
+
+### Features
+
+* new typography theme ([adc2694](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/adc2694e953f005a958c1609af2211db1a61e615))
+
 ## [1.0.16](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.0.15...v1.0.16) (2020-11-23)
 
 
