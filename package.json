@@ -75,7 +75,8 @@
     "styled-components": "5.2.1",
     "typeface-lato": "1.1.13",
     "typeface-montserrat": "1.1.13",
-    "typography": "0.16.19"
+    "typography": "0.16.19",
+    "typography-theme-moraga": "^0.16.19"
   },
   "devDependencies": {
     "@semantic-release/changelog": "5.0.1",
