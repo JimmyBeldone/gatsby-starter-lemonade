@@ -94,7 +94,7 @@
     "@babel/helper-explode-assignable-expression" "^7.10.4"
     "@babel/types" "^7.10.4"
 
-"@babel/helper-builder-react-jsx-experimental@^7.12.1", "@babel/helper-builder-react-jsx-experimental@^7.12.4":
+"@babel/helper-builder-react-jsx-experimental@^7.12.4":
   version "7.12.4"
   resolved "https://registry.yarnpkg.com/@babel/helper-builder-react-jsx-experimental/-/helper-builder-react-jsx-experimental-7.12.4.tgz#55fc1ead5242caa0ca2875dcb8eed6d311e50f48"
   integrity sha512-AjEa0jrQqNk7eDQOo0pTfUOwQBMF+xVqrausQwT9/rTKy0g04ggFNaJpaE09IQMn9yExluigWMJcj0WC7bq+Og==
@@ -298,7 +298,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.10.4", "@babel/parser@^7.10.5", "@babel/parser@^7.12.5", "@babel/parser@^7.7.0":
+"@babel/parser@^7.10.5", "@babel/parser@^7.12.5", "@babel/parser@^7.7.0":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.12.5.tgz#b4af32ddd473c0bfa643bd7ff0728b8e71b81ea0"
   integrity sha512-FVM6RZQ0mn2KCf1VUED7KepYeUWoVShczewOCfm3nzoBybaih51h+sYVVGthW9M6lPByEPTQf+xm27PBdlpwmQ==
@@ -998,15 +998,6 @@
   integrity sha512-KsNrLEOTUDg/QZ2KdPUqC+PamvbIDBqrfdbkHxnY9TWyedSUch+KU/TDoj/1kg55rmma595fnVWVqQ1eCOwsaA==
 
 "@babel/template@^7.10.4", "@babel/template@^7.12.7":
-  version "7.12.7"
-  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.12.7.tgz#c817233696018e39fbb6c491d2fb684e05ed43bc"
-  integrity sha512-GkDzmHS6GV7ZeXfJZ0tLRBhZcMcY0/Lnb+eEbXDBfCAcZCjrZKe6p3J4we/D24O9Y8enxWAg1cWwof59yLh2ow==
-  dependencies:
-    "@babel/code-frame" "^7.10.4"
-    "@babel/parser" "^7.12.7"
-    "@babel/types" "^7.12.7"
-
-"@babel/template@^7.12.7":
   version "7.12.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.12.7.tgz#c817233696018e39fbb6c491d2fb684e05ed43bc"
   integrity sha512-GkDzmHS6GV7ZeXfJZ0tLRBhZcMcY0/Lnb+eEbXDBfCAcZCjrZKe6p3J4we/D24O9Y8enxWAg1cWwof59yLh2ow==
@@ -8244,7 +8235,7 @@ gray-percentage@^2.0.0:
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
   integrity sha1-tyonTRsTeRBKAFC2OyB9xT/lb5k=
 
-grommet-icons@^4.2.0:
+grommet-icons@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/grommet-icons/-/grommet-icons-4.5.0.tgz#855ad26338ea1a1503eb18fdae428c431332be6a"
   integrity sha512-q7TNXV996fDh2e++7WapiNFUk0UEll17iEZ2d75W4yz+8Bb3+vdQ1MeT/d1RRlM0pV2KnTpSeR00GeN4KA9upg==
@@ -8256,12 +8247,12 @@ grommet-styles@^0.2.0:
   resolved "https://registry.yarnpkg.com/grommet-styles/-/grommet-styles-0.2.0.tgz#b2eac2b7e2747cb523434d21728ce5234f8ce4f4"
   integrity sha512-0OMSYuGeyifYKpg4Gv2HzL8rUdd0ddnJ5LbCBKgDuloC71XIwr9g/Fxa6rs737MbPV7OZ4pEm4wvrjH4epzf1A==
 
-grommet@2.15.2:
-  version "2.15.2"
-  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.15.2.tgz#0aad0c3a14c8e1b468e1460de1bbdf8ecae09269"
-  integrity sha512-Rb9kOC5IkA3zc2E8DZG6Tv7iK0ls45dqcPTMn4BD6x+sTI+scyre2UjCYSpuOkLR4h38Bh4CdfWjQYohx82VJw==
+grommet@2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.16.0.tgz#96ac7ad34cfaae8e0757a5afe7cdf0653ee8f195"
+  integrity sha512-OcfjI5KfJQrN/JnUTzyVuBxmNV3i+WGDKcxLCFRWv7CYJCxZob74ezk+c0r1zkgribUafomVtC55pXQE147xfQ==
   dependencies:
-    grommet-icons "^4.2.0"
+    grommet-icons "^4.5.0"
     hoist-non-react-statics "^3.2.0"
     markdown-to-jsx "^6.11.4"
     polished "^3.4.1"
