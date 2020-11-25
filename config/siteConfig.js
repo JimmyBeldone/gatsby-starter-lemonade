@@ -14,7 +14,7 @@ module.exports = {
 
     googleSiteVerification: process.env.GATSBY_GOOGLE_SITE_VERIFICATION || ``,
 
-    icon: `src/images/gatsby-icon.png`,
+    icon: `src/contents/images/icons/gatsby-icon.png`,
 
     iconName: 'gatsby-icon',
 

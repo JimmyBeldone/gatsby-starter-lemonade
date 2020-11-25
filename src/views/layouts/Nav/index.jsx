@@ -9,8 +9,8 @@ const Nav = () => (
     <div id='main-nav'>
         {routes
             .filter((route) => route.nav !== false)
-            .map((route, i) => (
-                <Link key={route.name + i} to={route.path}>
+            .map((route) => (
+                <Link key={route.name} to={route.path}>
                     {route.name}
                 </Link>
             ))}
