@@ -46,7 +46,7 @@ const updatePackage = async () => {
     // update package.json with the user's values
     values.forEach((res) => {
         replace({
-            paths: ['setup/package.json'],
+            paths: ['package.json'],
             recursive: false,
             regex: `("${res.key}"): "(.*?)"`,
             replacement: `$1: "${res.value}"`,
@@ -56,7 +56,7 @@ const updatePackage = async () => {
 
     // reset package.json 'keywords' field to empty state
     replace({
-        paths: ['setup/package.json'],
+        paths: ['package.json'],
         recursive: false,
         regex: /"keywords": \[[\s\S]+?\]/,
         replacement: `"keywords": []`,
@@ -65,7 +65,7 @@ const updatePackage = async () => {
 
     // remove setup script from package.json
     replace({
-        paths: ['setup/package.json'],
+        paths: ['package.json'],
         recursive: false,
         regex: /\s*"setup":.*,/,
         replacement: '',
