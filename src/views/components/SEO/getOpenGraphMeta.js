@@ -8,34 +8,32 @@ const setWebsite = () => [
     },
 ];
 
-const setArticle = ({ author, category, publishedAt, tags, updatedAt }) => {
-    return [
-        {
-            content: 'article',
-            property: `og:type`,
-        },
-        {
-            content: category,
-            name: 'article:section',
-        },
-        {
-            content: publishedAt,
-            name: 'article:published_time',
-        },
-        {
-            content: updatedAt,
-            name: 'article:modified_time',
-        },
-        {
-            content: tags.join(', '),
-            name: 'article:tag',
-        },
-        {
-            content: author || socialConfig.author.networks.github,
-            name: 'article:author', // url with existing og:profile on page
-        },
-    ];
-};
+const setArticle = ({ author, category, publishedAt, tags, updatedAt }) => [
+    {
+        content: 'article',
+        property: `og:type`,
+    },
+    {
+        content: category,
+        name: 'article:section',
+    },
+    {
+        content: publishedAt,
+        name: 'article:published_time',
+    },
+    {
+        content: updatedAt,
+        name: 'article:modified_time',
+    },
+    {
+        content: tags.join(', '),
+        name: 'article:tag',
+    },
+    {
+        content: author || socialConfig.author.networks.github,
+        name: 'article:author', // url with existing og:profile on page
+    },
+];
 
 const setBusiness = () => {
     const { business } = socialConfig.business;
@@ -67,14 +65,12 @@ const setBusiness = () => {
     ];
 };
 
-const setProductGroup = () => {
-    return [
-        {
-            content: 'product.group',
-            property: `og:type`,
-        },
-    ];
-};
+const setProductGroup = () => [
+    {
+        content: 'product.group',
+        property: `og:type`,
+    },
+];
 
 const setProductItem = ({
     availability = null,

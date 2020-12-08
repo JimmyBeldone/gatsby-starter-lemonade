@@ -20,18 +20,14 @@ const IndexPage = ({ data, location }) => {
             <div className='container'>
                 <h1>Hello</h1>
 
-                <form action=''>
-                    <input type='text' />
-                    <input type='text' />
-                </form>
-
-                <Link to='/page-2/'>Page 2</Link>
                 <div>
                     <Image
                         fixed={data.file.childImageSharp.fixed}
                         alt='gatsby icon'
                     />
                 </div>
+
+                <Link to='/page-2/'>Page 2</Link>
             </div>
         </MainLayout>
     );
