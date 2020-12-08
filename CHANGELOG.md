@@ -1,3 +1,11 @@
+## [1.1.6](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.5...v1.1.6) (2020-12-08)
+
+
+### Bug Fixes
+
+* add new setup message ([1dc0948](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/1dc09480c4565f2d87b41f632756f6ff3b6afebb))
+* **setup:** remove double call to function ([49f6f23](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/49f6f2397d56489304d76c61ef000a005a555ecb))
+
 ## [1.1.5](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.4...v1.1.5) (2020-12-08)
 
 
