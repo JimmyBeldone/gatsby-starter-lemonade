@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.4...v1.1.5) (2020-12-08)
+
+
+### Bug Fixes
+
+* **setup:** pkg path ([2c91713](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/2c91713c2716e9fa2d5df62b3fb9ad7ffec8aaca))
+
 ## [1.1.4](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.3...v1.1.4) (2020-12-08)
 
 
