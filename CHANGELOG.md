@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.2...v1.1.3) (2020-12-08)
+
+
+### Bug Fixes
+
+* new setup config ([bd79a8d](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/bd79a8dc5f30e97587c275e8ef5fa6eeb174c2e2))
+
 ## [1.1.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.1...v1.1.2) (2020-12-08)
 
 
