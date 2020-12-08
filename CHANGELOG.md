@@ -1,3 +1,11 @@
+## [1.1.4](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.3...v1.1.4) (2020-12-08)
+
+
+### Bug Fixes
+
+* lint ([ac46180](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/ac461803a49164b790416a681dc70ebd6377552b))
+* **setup:** better message system ([987456f](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/987456fcad45f52bd116b820904cbaad4137bc8b))
+
 ## [1.1.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.2...v1.1.3) (2020-12-08)
 
 
