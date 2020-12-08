@@ -7,6 +7,8 @@ import siteConfig from '../../../config/siteConfig';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
+console.log('%cThis is a default font style', 'color: blue; font-size: 20px');
+
 const MainLayout = ({ children }) => {
     return (
         <div id='app'>
