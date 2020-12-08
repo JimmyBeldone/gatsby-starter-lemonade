@@ -1,8 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
+const chalk = require('chalk');
 const prompts = require('prompts');
 const replace = require('replace');
 const rimraf = require('rimraf');
 
+const { log } = require('./constants');
 const questions = require('./setupPrompts');
 const {
     cancelMessage,
@@ -13,7 +15,11 @@ const {
     pkgIntroMesage,
 } = require('./messages');
 
-intalledMessage();
+const chalkBold = chalk.bold.white;
+
+const writeMessage = (msg) => log(chalkBold(msg));
+
+writeMessage(intalledMessage);
 
 const onCancel = () => {
     cancelMessage();
@@ -22,37 +28,20 @@ const onCancel = () => {
 
 // Update package.json
 const updatePackage = async () => {
-    pkgIntroMesage();
+    writeMessage(pkgIntroMesage);
 
     const responses = await prompts(questions);
 
-    const values = [
-        {
-            key: 'name',
-            value: responses.projectName,
-        },
-        {
-            key: 'version',
-            value: responses.version,
-        },
-        {
-            key: 'author',
-            value: responses.author,
-        },
-        {
-            key: 'license',
-            value: responses.license,
-        },
-        {
-            key: 'description',
-            value: responses.description,
-        },
-        // simply use an empty URL here to clear the existing repo URL
-        {
-            key: 'url',
-            value: 'https://github.com/username/repo',
-        },
-    ];
+    const values = Object.keys(responses).map((item) => ({
+        key: item,
+        value: responses[item],
+    }));
+
+    // simply use an empty URL here to clear the existing repo URL
+    values.push({
+        key: 'url',
+        value: 'https://github.com/username/repo',
+    });
 
     // update package.json with the user's values
     values.forEach((res) => {
@@ -83,7 +72,7 @@ const updatePackage = async () => {
         silent: true,
     });
 
-    finalMessage();
+    writeMessage(finalMessage);
 
     // remove all setup scripts from the 'tools' folder
     rimraf('./setup', (error) => {
@@ -109,12 +98,12 @@ const updatePackage = async () => {
             rimraf('.git', (error) => {
                 if (error) throw new Error(error);
 
-                gitDeleteMessage();
+                writeMessage(gitDeleteMessage);
                 updatePackage();
             });
             updatePackage();
         } else {
-            gitNoDeleteMessage();
+            writeMessage(gitNoDeleteMessage);
             updatePackage();
         }
     } else {

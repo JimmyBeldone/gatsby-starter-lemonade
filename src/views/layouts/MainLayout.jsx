@@ -7,25 +7,23 @@ import siteConfig from '../../../config/siteConfig';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
-console.log('%cThis is a default font style', 'color: blue; font-size: 20px');
+console.log('%cGatsby Stater Lemonade', 'color: green; font-size: 28px');
 
-const MainLayout = ({ children }) => {
-    return (
-        <div id='app'>
-            <Grommet plain>
-                <div id='content-wrap'>
-                    <Headroom>
-                        <Header siteTitle={siteConfig.title} />
-                    </Headroom>
-                    <main>
-                        <div id='content'>{children}</div>
-                    </main>
-                </div>
-                <Footer />
-            </Grommet>
-        </div>
-    );
-};
+const MainLayout = ({ children }) => (
+    <div id='app'>
+        <Grommet plain>
+            <div id='content-wrap'>
+                <Headroom>
+                    <Header siteTitle={siteConfig.title} />
+                </Headroom>
+                <main>
+                    <div id='content'>{children}</div>
+                </main>
+            </div>
+            <Footer />
+        </Grommet>
+    </div>
+);
 
 MainLayout.propTypes = {
     children: PropTypes.node.isRequired,
