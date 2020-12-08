@@ -32,33 +32,16 @@ const updatePackage = async () => {
 
     const responses = await prompts(questions);
 
-    const values = [
-        {
-            key: 'name',
-            value: responses.projectName,
-        },
-        {
-            key: 'version',
-            value: responses.version,
-        },
-        {
-            key: 'author',
-            value: responses.author,
-        },
-        {
-            key: 'license',
-            value: responses.license,
-        },
-        {
-            key: 'description',
-            value: responses.description,
-        },
-        // simply use an empty URL here to clear the existing repo URL
-        {
-            key: 'url',
-            value: 'https://github.com/username/repo',
-        },
-    ];
+    const values = Object.keys(responses).map((item) => ({
+        key: item,
+        value: responses[item],
+    }));
+
+    // simply use an empty URL here to clear the existing repo URL
+    values.push({
+        key: 'url',
+        value: 'https://github.com/username/repo',
+    });
 
     // update package.json with the user's values
     values.forEach((res) => {

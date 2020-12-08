@@ -15,7 +15,7 @@ ${unicode(icons.check)}  Alright ! Dependencies installed ! \n
 ${unicode(icons.trash)}  Preparing to delete local git repository...
 `;
 
-const pkgIntroMesage = ` ${unicode(
+const pkgIntroMesage = `${unicode(
     icons.tree,
 )}  Now let's pimp your package.json file \n`;
 
@@ -37,11 +37,11 @@ ${chalkBg('                                         ')}
 
 `;
 
-const gitDeleteMessage = ` \n ${unicode(
+const gitDeleteMessage = `\n${unicode(
     icons.check,
 )}  Original Git repository removed ! \n `;
 
-const gitNoDeleteMessage = `\n ${unicode(
+const gitNoDeleteMessage = `\n${unicode(
     icons.cross,
 )}  Git repository won't be removed  \n `;
 
