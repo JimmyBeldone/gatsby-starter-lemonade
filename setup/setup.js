@@ -1,8 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
+const chalk = require('chalk');
 const prompts = require('prompts');
 const replace = require('replace');
 const rimraf = require('rimraf');
 
+const { log } = require('./constants');
 const questions = require('./setupPrompts');
 const {
     cancelMessage,
@@ -13,7 +15,11 @@ const {
     pkgIntroMesage,
 } = require('./messages');
 
-intalledMessage();
+const chalkBold = chalk.bold.white;
+
+const writeMessage = (msg) => log(chalkBold(msg));
+
+writeMessage(intalledMessage);
 
 const onCancel = () => {
     cancelMessage();
@@ -22,7 +28,7 @@ const onCancel = () => {
 
 // Update package.json
 const updatePackage = async () => {
-    pkgIntroMesage();
+    writeMessage(pkgIntroMesage);
 
     const responses = await prompts(questions);
 
@@ -83,7 +89,7 @@ const updatePackage = async () => {
         silent: true,
     });
 
-    finalMessage();
+    writeMessage(finalMessage);
 
     // remove all setup scripts from the 'tools' folder
     rimraf('./setup', (error) => {
@@ -109,12 +115,12 @@ const updatePackage = async () => {
             rimraf('.git', (error) => {
                 if (error) throw new Error(error);
 
-                gitDeleteMessage();
+                writeMessage(gitDeleteMessage);
                 updatePackage();
             });
             updatePackage();
         } else {
-            gitNoDeleteMessage();
+            writeMessage(gitNoDeleteMessage);
             updatePackage();
         }
     } else {
