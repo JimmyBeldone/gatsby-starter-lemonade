@@ -1,3 +1,11 @@
+## [1.1.7](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.6...v1.1.7) (2020-12-09)
+
+
+### Bug Fixes
+
+* add staging CI + doc ([44948f1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/44948f15d6408a74e580b3f5d74cbfe526bc194f))
+* remove grommet ([8339dbf](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/8339dbf8ed472dbd81007aa08afb978094859e96))
+
 ## [1.1.6](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.5...v1.1.6) (2020-12-08)
 
 
