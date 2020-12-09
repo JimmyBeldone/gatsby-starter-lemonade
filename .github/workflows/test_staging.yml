@@ -1,4 +1,4 @@
-name: TESTING
+name: TESTING_STAGING
 
 on:
   pull_request:
@@ -26,5 +26,5 @@ jobs:
 
       - name: Start Build
         # env:
-        #   GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL }}
-        run: yarn build
+        #   GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL_STAGING }}
+        run: yarn build:staging

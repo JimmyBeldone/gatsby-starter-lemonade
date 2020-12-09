@@ -13,8 +13,11 @@
         "mk-react-comp",
         "pwa",
         "progressive web app",
+        "github actions",
         "lemonade",
-        "gatsby-theme"
+        "gatsby-starter",
+        "semantic release",
+        "pre commit"
     ],
     "license": "MIT",
     "scripts": {
@@ -66,7 +69,6 @@
         "gatsby-schema-field-absolute-path": "1.2.2",
         "gatsby-source-filesystem": "2.7.0",
         "gatsby-transformer-sharp": "2.8.0",
-        "grommet": "2.16.0",
         "intersection-observer": "0.11.0",
         "lodash.kebabcase": "4.1.1",
         "prop-types": "15.7.2",
