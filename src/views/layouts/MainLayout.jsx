@@ -7,6 +7,11 @@ import siteConfig from '../../../config/siteConfig';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
+console.log(
+    '%c🚀  Gatsby Stater Lemonade  🍋',
+    "color: #40667c; font-size: 28px; margin: 20px auto;font-family: 'Montserrat'; font-weight: 500",
+);
+
 const MainLayout = ({ children }) => (
     <div id='app'>
         <Grommet plain>

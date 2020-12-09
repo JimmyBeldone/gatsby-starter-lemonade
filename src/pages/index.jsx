@@ -1,4 +1,4 @@
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -8,10 +8,6 @@ import MainLayout from '../views/layouts/MainLayout';
 import Image from '../views/components/Image';
 
 const IndexPage = ({ data, location }) => {
-    console.log(
-        '%c🚀  Gatsby Stater Lemonade  🍋',
-        "color: #639; font-size: 28px; margin: 20px auto;font-family: 'Montserrat'; font-weight: 500",
-    );
     const breakpoints = useBreakpoint();
     console.log(breakpoints);
 
@@ -23,16 +19,21 @@ const IndexPage = ({ data, location }) => {
                 description='Page 1 description'
             />
             <div className='container'>
-                <h1>Hello</h1>
+                <h1>Welcome</h1>
 
-                <div>
-                    <Image
-                        fixed={data.file.childImageSharp.fixed}
-                        alt='gatsby icon'
-                    />
+                <div style={{ alignItems: 'center', display: 'flex' }}>
+                    <div style={{ marginRight: '10px' }}>MADE WITH </div>
+                    <a
+                        href='https://www.gatsbyjs.com/'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <Image
+                            fixed={data.file.childImageSharp.fixed}
+                            alt='gatsby icon'
+                        />
+                    </a>
                 </div>
-
-                <Link to='/page-2/'>Page 2</Link>
             </div>
         </MainLayout>
     );
@@ -49,7 +50,7 @@ export const query = graphql`
     query homePicture {
         file(relativePath: { eq: "gatsby-icon.png" }) {
             childImageSharp {
-                fixed(width: 300) {
+                fixed(width: 24) {
                     ...GatsbyImageSharpFixed_withWebp
                     src
                 }
