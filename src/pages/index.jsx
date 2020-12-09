@@ -8,8 +8,13 @@ import MainLayout from '../views/layouts/MainLayout';
 import Image from '../views/components/Image';
 
 const IndexPage = ({ data, location }) => {
+    console.log(
+        '%c🚀  Gatsby Stater Lemonade  🍋',
+        "color: #639; font-size: 28px; margin: 20px auto;font-family: 'Montserrat'; font-weight: 500",
+    );
     const breakpoints = useBreakpoint();
     console.log(breakpoints);
+
     return (
         <MainLayout>
             <SEO

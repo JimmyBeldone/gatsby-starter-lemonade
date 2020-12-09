@@ -7,8 +7,6 @@ import siteConfig from '../../../config/siteConfig';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
-console.log('%cGatsby Stater Lemonade', 'color: green; font-size: 28px');
-
 const MainLayout = ({ children }) => (
     <div id='app'>
         <Grommet plain>
