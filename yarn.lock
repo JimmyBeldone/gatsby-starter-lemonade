@@ -8639,6 +8639,11 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
+husky-git-emoji@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/husky-git-emoji/-/husky-git-emoji-1.0.1.tgz#990259b1d346f060ea0b9106d80b90f0d8165c6f"
+  integrity sha512-3zB/FrDORGXuQmXFd1m0vs7biXjiSYJU2Zfsl2d5m/2AqbHwcP5kDhs6Ff5q41s9Zbw9QpctUYB/WWWe48q2ZA==
+
 husky@4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.5.tgz#ab8d2a0eb6b62fef2853ee3d442c927d89290902"
