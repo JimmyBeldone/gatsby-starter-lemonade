@@ -69,7 +69,7 @@
         "gatsby-schema-field-absolute-path": "1.2.2",
         "gatsby-source-filesystem": "2.7.0",
         "gatsby-transformer-sharp": "2.8.0",
-        "intersection-observer": "0.11.0",
+        "intersection-observer": "0.12.0",
         "lodash.kebabcase": "4.1.1",
         "prop-types": "15.7.2",
         "react": "17.0.1",
