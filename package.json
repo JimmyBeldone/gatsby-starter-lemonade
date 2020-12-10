@@ -106,7 +106,7 @@
         "gatsby-plugin-stylus-resources": "1.0.34",
         "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.18",
         "husky": "4.3.5",
-        "husky-git-emoji": "^1.0.1",
+        "husky-git-emoji": "https://github.com/JimmyBeldone/husky-git-emoji",
         "lint-staged": "10.5.3",
         "prettier": "2.2.1",
         "prompts": "^2.4.0",
