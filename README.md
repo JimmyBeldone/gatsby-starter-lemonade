@@ -70,17 +70,22 @@ git remote add origin git@github.com:username/repository.git
 git add .
 git commit -m "first commit"
 git push -u origin master
-git branch staging && git checkout staging && git push origin staging
-git branch develop && git checkout develop && git push origin develop
 ```
 
-1. Run semantic-release-cli : `npx semantic-release-cli setup`.
+1. Go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and generate a personnal access token so that semantic-release is allowed to access your repo.
 
-![semantic-release-cli](https://github.com/semantic-release/semantic-release/raw/master/media/semantic-release-cli.png)
+2. Create a new repository secret named `GH_TOKEN` and past your personnal access token.
 
-2. Go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and generate a personnal access token so that semantic-release is allowed to access your repo.
+3. Your repository url must be set in `package.json`:
 
-3. Create a new repository secret named `GH_TOKEN` and past your personnal access token.
+```json
+"repository": {
+    "type": "git",
+    "url": "https://github.com/JimmyBeldone/expo-starter-lemonade"
+},
+```
+
+4. Next time you push on `master` branch, a release will be added if your [conventionnal commit type](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) is correct.
 
 ---
 
