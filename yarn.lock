@@ -7485,10 +7485,10 @@ gatsby-recipes@^0.8.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-schema-field-absolute-path@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/gatsby-schema-field-absolute-path/-/gatsby-schema-field-absolute-path-1.2.2.tgz#459de9297ce7a82af0e75266a57643f9a3c75227"
-  integrity sha512-cx2MjB12qmKdBEkND3GLCeBEGSPUzS3riiQa9cdFu9c5qvNpQJXka9FuhesUw6iWO+QH+ndzkDSQeHCrI2vNBQ==
+gatsby-schema-field-absolute-path@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-schema-field-absolute-path/-/gatsby-schema-field-absolute-path-1.2.3.tgz#7dd6c0ecfa09b928a71c0195a329fda7508872f1"
+  integrity sha512-gzUDG8RwWFwRbdaWRQu1O5oWr45PsVr6DlRp0datDd7ALZ1ZYqoNXTZ+BPIkn/kFNatFYlgkaPbvWBew6dgtKw==
 
 gatsby-source-filesystem@2.10.0:
   version "2.10.0"
