@@ -1,4 +1,4 @@
-import Img from 'gatsby-image/withIEPolyfill';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import kebabCase from 'lodash.kebabcase';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -9,7 +9,7 @@ const Image = ({ alt, ...props }) => {
     // Format string to match <img /> alt best practices
     const altify = (string) => ALT_TEXT_PREFIX + kebabCase(string);
 
-    return <Img alt={altify(alt)} {...props} />;
+    return <GatsbyImage alt={altify(alt)} {...props} />;
 };
 
 Image.propTypes = {

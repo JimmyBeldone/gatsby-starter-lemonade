@@ -1,4 +1,3 @@
-import siteConfig from '../../../../config/siteConfig';
 import socialConfig from '../../../../config/socialConfig';
 
 const setWebsite = () => [
@@ -122,6 +121,7 @@ const getOpenGraphMeta = (
     contentType,
     url,
     locale,
+    name,
     article = null,
     product = null,
 ) => {
@@ -151,7 +151,7 @@ const getOpenGraphMeta = (
             property: `og:url`,
         },
         {
-            content: siteConfig.name,
+            content: name,
             property: `og:site_name`,
         },
         {
