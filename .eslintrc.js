@@ -20,6 +20,7 @@ module.exports = {
     root: true,
     rules: {
         'implicit-arrow-linebreak': 0,
+        'import/prefer-default-export': 0,
         indent: [0, 4],
         'jsx-quotes': ['error', 'prefer-single'],
         'no-console': 0,

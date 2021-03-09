@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
 import PropTypes from 'prop-types';
 import React from 'react';
 
