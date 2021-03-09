@@ -4,13 +4,7 @@ module.exports = {
         node: true,
     },
 
-    extends: [
-        'plugin:react/recommended',
-        'airbnb',
-        'airbnb/hooks',
-        'prettier',
-        'prettier/react',
-    ],
+    extends: ['plugin:react/recommended', 'airbnb', 'airbnb/hooks', 'prettier'],
     globals: {
         __PATH_PREFIX__: true,
     },
