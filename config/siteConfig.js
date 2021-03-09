@@ -18,6 +18,8 @@ module.exports = {
 
     iconName: 'gatsby-icon',
 
+    image: '/images/gatsby-astronaut.png',
+
     keywords: [
         `gatsby-starter-lemonade`,
         `gatsby starter`,

@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 import SEO from '../views/components/SEO';
 import MainLayout from '../views/layouts/MainLayout';
 
-const MLPage = ({ location }) => (
+const MLPage = () => (
     // const cnilLink = (
     //     <a
     //         href='http://www.cnil.fr/vos-droits/vos-traces/les-cookies/'
@@ -15,18 +14,11 @@ const MLPage = ({ location }) => (
     //     </a>
     // );
     <MainLayout>
-        <SEO
-            title='demo.ml.headerTitle'
-            location={location}
-            description='demo.ml.description'
-        />
+        <SEO title='demo.ml.headerTitle' description='demo.ml.description' />
         <div className='container'>
             <h1>Terms</h1>
         </div>
     </MainLayout>
 );
-MLPage.propTypes = {
-    location: PropTypes.object.isRequired,
-};
 
 export default MLPage;

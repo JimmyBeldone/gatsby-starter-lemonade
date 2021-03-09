@@ -1,17 +1,38 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import { useLocation } from '@reach/router';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import siteConfig from '../../../../config/siteConfig';
-import getJsonLd from './getJsonLd';
+// import getJsonLd from './getJsonLd';
 import getOpenGraphMeta from './getOpenGraphMeta';
 import getTwitterMeta from './getTwitterMeta';
+
+const query = graphql`
+    query DefaultSEOQuery {
+        site {
+            siteMetadata {
+                defaultTitle: title
+                defaultDescription: description
+                defaultImage: image
+                articlePrefix
+                backgroundColor
+                googleSiteVerification
+                icon
+                iconName
+                name
+                pathPrefix
+                siteUrl
+                themeColor
+                titleAlt
+            }
+        }
+    }
+`;
 
 const SEO = ({
     description,
     image,
-    location,
     meta,
     pageType,
     post,
@@ -19,36 +40,36 @@ const SEO = ({
     robots,
     title,
 }) => {
-    const data = useStaticQuery(graphql`
-        query DefaultSEOQuery {
-            file(name: { eq: "gatsby-icon" }) {
-                childImageSharp {
-                    fixed(width: 500) {
-                        ...GatsbyImageSharpFixed_noBase64
-                    }
-                }
-            }
-        }
-    `);
+    const { pathname } = useLocation();
+    const { site } = useStaticQuery(query);
+    const {
+        articlePrefix,
+        defaultDescription,
+        defaultImage,
+        defaultTitle,
+        googleSiteVerification,
+        name,
+        siteUrl,
+        titleAlt,
+    } = site.siteMetadata;
 
     // Fomat title & escription
     let formattedTitle;
     let metaDescription;
 
-    const formattedTitleAlt = siteConfig.titleAlt;
+    const formattedTitleAlt = titleAlt;
 
     if (pageType === 'website') {
         formattedTitle = title;
-        metaDescription = description || siteConfig.description;
+        metaDescription = description || defaultDescription;
     } else {
         formattedTitle = title.trim();
         metaDescription = description.trim();
     }
 
+    const metaUrl = `${siteUrl}${pathname}`;
     // Image
-    const metaImage =
-        image !== null ? image.url : data.file.childImageSharp.fixed.src;
-    const metaImageUrl = siteConfig.siteUrl + metaImage;
+    const metaImage = `${siteUrl}${image !== null ? image.url : defaultImage}`;
     const metaImageAlt = image !== null ? image.alt : metaDescription;
 
     // Manage 404
@@ -59,35 +80,37 @@ const SEO = ({
                     lang: 'fr',
                 }}
                 title={formattedTitle}
-                titleTemplate={`%s | ${siteConfig.title}`}
+                titleTemplate={`%s | ${defaultTitle}`}
                 defer={false}
             />
         );
     }
 
     const defaultLang = {
-        link: location.href,
+        link: metaUrl,
         locale: `Fr`,
         path: `fr`,
         territory: `fr_FR`,
     };
-    const defaultUrl = siteConfig.siteUrl + defaultLang.link;
+    const defaultUrl = defaultLang.link;
 
     // Manage i18n
     const alternateLinks = [];
     const ogLocaleAlternateMeta = [];
 
     // Manage Twitter CArds & Open Graph Meta
-    const base = [formattedTitle, metaDescription, metaImageUrl, metaImageAlt];
-    const ogBase = [...base, pageType, location.href, defaultLang.territory]
+    const base = [formattedTitle, metaDescription, metaImage, metaImageAlt];
+    const ogBase = [...base, pageType, metaUrl, defaultLang.territory, name]
         .concat(pageType === 'article' ? post : null)
         .concat(pageType === 'product' ? product : null)
-        .concat(data.file.childImageSharp.fixed.src)
-        .concat(formattedTitleAlt);
+        .concat(metaImage)
+        .concat(formattedTitleAlt)
+        .concat(articlePrefix)
+        .concat(siteUrl);
 
     const twitterCard = getTwitterMeta(...base);
     const ogMeta = getOpenGraphMeta(...ogBase);
-    const jsonLd = getJsonLd(...ogBase);
+    // const jsonLd = getJsonLd(...ogBase);
 
     return (
         <Helmet
@@ -96,8 +119,8 @@ const SEO = ({
                 lang: 'fr',
             }}
             title={formattedTitle}
-            titleTemplate={`%s | ${siteConfig.title}`}
-            link={[{ href: location.href, rel: 'canonical' }]
+            titleTemplate={`%s | ${defaultTitle}`}
+            link={[{ href: metaUrl, rel: 'canonical' }]
                 .concat(alternateLinks)
                 .concat({
                     href: defaultUrl,
@@ -106,7 +129,7 @@ const SEO = ({
                 })}
             meta={[
                 {
-                    content: siteConfig.googleSiteVerification,
+                    content: googleSiteVerification,
                     name: `google-site-verification`,
                 },
                 {
@@ -114,7 +137,7 @@ const SEO = ({
                     name: `description`,
                 },
                 {
-                    content: metaImageUrl,
+                    content: metaImage,
                     name: `image`,
                 },
             ]
@@ -128,7 +151,7 @@ const SEO = ({
                 .concat(meta)}
         >
             {/* Schema.org tags */}
-            <script type='application/ld+json'>{JSON.stringify(jsonLd)}</script>
+            {/* <script type='application/ld+json'>{JSON.stringify(jsonLd)}</script> */}
         </Helmet>
     );
 };
@@ -148,7 +171,6 @@ SEO.propTypes = {
         alt: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
     }),
-    location: PropTypes.object.isRequired,
     meta: PropTypes.arrayOf(
         PropTypes.shape({
             content: PropTypes.string.isRequired,

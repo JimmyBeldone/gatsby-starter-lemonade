@@ -33,6 +33,7 @@ const sourceFilesystem = (name, dir = null) => {
 };
 
 module.exports = {
+    flags: { DEV_SSR: false },
     plugins: [
         'gatsby-plugin-eslint',
         `gatsby-plugin-styled-components`,
@@ -63,6 +64,7 @@ module.exports = {
             },
             resolve: `gatsby-plugin-stylus-resources`,
         },
+        `gatsby-plugin-image`,
         `gatsby-transformer-sharp`,
         // {
         //     resolve: 'gatsby-schema-field-absolute-path',
