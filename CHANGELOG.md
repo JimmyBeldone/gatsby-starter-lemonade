@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.8...v2.0.0) (2021-03-09)
+
+
+### Features
+
+* ✨ gatsby-plugin-image + code review for v3 ([a8b311c](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/a8b311c3998ea02011ca9effe98e7b5987c7df5a))
+* 💥 ✨ gatsby v3 migration ([6432546](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/64325462bc0ddb15a4154958e7f6de343cff1a92))
+
+
+### BREAKING CHANGES
+
+* - Gatsby v3
+- Webpack v5
+
 ## [1.1.8](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.7...v1.1.8) (2021-01-24)
 
 
