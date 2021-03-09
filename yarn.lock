@@ -919,6 +919,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.13.10":
+  version "7.13.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
+  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.12.6":
   version "7.12.12"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.12.12.tgz#f858ab1c76d9c4c23fe0783a0330ad37755f0176"
@@ -7369,12 +7376,12 @@ gatsby-plugin-styled-components@3.9.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-stylus-resources@1.0.35:
-  version "1.0.35"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-stylus-resources/-/gatsby-plugin-stylus-resources-1.0.35.tgz#381263d9b41646768e0456e090427cd89042630f"
-  integrity sha512-G/2yGtdvLjR0DpshsEXUnI0/dJM3xN5WzizKLwwdCxZqzXl5qhTSMRkyWIELg9miYMSx8MueZNiKWcYR1UPQuw==
+gatsby-plugin-stylus-resources@1.0.36:
+  version "1.0.36"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-stylus-resources/-/gatsby-plugin-stylus-resources-1.0.36.tgz#14b342e02f86cabba662b9f796ef149d5ebb3cad"
+  integrity sha512-JmpJ9MPQ/1hj9R/OXuPVwNaWQiMZrwvno8WrbD3miIu3jIsg0wtI3sVmP4e6kLhmd5c3vfBzeMtj6HQ3KGZCXQ==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.13.10"
     sass-resources-loader "^2.0.3"
     stylus "^0.54.8"
     stylus-loader "^4.3.3"
