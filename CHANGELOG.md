@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.2...v2.0.3) (2021-06-03)
+
+
+### Bug Fixes
+
+* 🐛 update devDependencies ([f25ce97](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/f25ce97acd95271fe310f0549e7069ed2669c1ba))
+
 ## [2.0.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.1...v2.0.2) (2021-06-03)
 
 
