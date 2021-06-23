@@ -1,3 +1,11 @@
+## [2.0.4](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.3...v2.0.4) (2021-06-23)
+
+
+### Bug Fixes
+
+* 🐛 remove avif format ([e037488](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e037488a5722b84d0606e929b25d00f2845f9acf))
+* 🐛 update dependencies ([166ea2e](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/166ea2e9fae57a4eeefce902757865cd13d0cdf5))
+
 ## [2.0.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.2...v2.0.3) (2021-06-03)
 
 
