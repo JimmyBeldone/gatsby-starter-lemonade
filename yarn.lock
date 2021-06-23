@@ -958,6 +958,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.14.6":
+  version "7.14.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
+  integrity sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.12.6":
   version "7.12.12"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.12.12.tgz#f858ab1c76d9c4c23fe0783a0330ad37755f0176"
@@ -7448,15 +7455,15 @@ gatsby-plugin-styled-components@4.6.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-stylus-resources@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-stylus-resources/-/gatsby-plugin-stylus-resources-2.0.0.tgz#9c07d06f566a8f9dbc3f148d4e08fa38d22e5e6a"
-  integrity sha512-blFmckIKGuaWguX5ddXTUwUB0Twod6GJZC1oVUx3A3BheRT849J8MXTULOJrr3g4/6XgNfkkNErbBozYMdVy8Q==
+gatsby-plugin-stylus-resources@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-stylus-resources/-/gatsby-plugin-stylus-resources-2.0.1.tgz#ba5923b4332f1148a20aeffe523ca28ec14aa1f0"
+  integrity sha512-PoZKRC6ulVywwlW+witkkRKTpHPCfrseqO97r4ib2/wSNW3vvoE22Gp7Tati0DKvqs+Wbw8/ekaogRRwwYA+VQ==
   dependencies:
-    "@babel/runtime" "^7.13.10"
-    sass-resources-loader "^2.0.3"
+    "@babel/runtime" "^7.14.6"
+    sass-resources-loader "^2.2.3"
     stylus "^0.54.8"
-    stylus-loader "^5.0.0"
+    stylus-loader "^6.1.0"
 
 gatsby-plugin-typescript@^3.6.0:
   version "3.6.0"
@@ -14233,10 +14240,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass-resources-loader@^2.0.3:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.1.1.tgz#a231b7c4e326d9c8d141909c901233bef9453151"
-  integrity sha512-/KrD5mEBTj3ZQ49thKSThhpv1OFhc82JbWA0bmv9yANRuPIlQrydNpZG82jdy4pEWY0QcQTGyd5OmCb3xVeZsw==
+sass-resources-loader@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.2.3.tgz#1be92ea326a4a2d8d7c3483a01577a70df7d7fa1"
+  integrity sha512-QHyhf1euMF16qC5R24felQYkg7NvSlsNkidUpgrga27hMLqNP5TfmQ6K0iVn7BurKmUU/CDuygZh0py9lXeYPQ==
   dependencies:
     async "^3.2.0"
     chalk "^4.1.0"
@@ -15408,10 +15415,10 @@ stylint@2.0.0:
     user-home "2.0.0"
     yargs "4.7.1"
 
-stylus-loader@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/stylus-loader/-/stylus-loader-5.0.0.tgz#d3f548887ab67808cc40d320079c44f8ffa3d9b8"
-  integrity sha512-1OaGgixTgC8IAaMCodZXg7XYsfP1qU0UzTHDyPaWACUh34j9geJL4iA583tFJDOtfNUOfDLaBpUywc5MicQ1aA==
+stylus-loader@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/stylus-loader/-/stylus-loader-6.1.0.tgz#7a3a719a27cb2b9617896d6da28fda94c3ed9762"
+  integrity sha512-qKO34QCsOtSJrXxQQmXsPeaVHh6hMumBAFIoJTcsSr2VzrA6o/CW9HCGR8spCjzJhN8oKQHdj/Ytx0wwXyElkw==
   dependencies:
     fast-glob "^3.2.5"
     klona "^2.0.4"
