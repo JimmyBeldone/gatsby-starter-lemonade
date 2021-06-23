@@ -76,7 +76,6 @@ module.exports = {
         //         },
         //     },
         // },
-        'gatsby-schema-field-absolute-path',
         `gatsby-plugin-sharp`,
         `gatsby-plugin-netlify`,
         `gatsby-plugin-sitemap`,

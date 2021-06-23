@@ -29,10 +29,10 @@ const IndexPage = () => {
                             alt='gatsby icon'
                             src='../contents/images/icons/gatsby-icon.png'
                             // src={logo}
-                            formats={['AUTO', 'WEBP', 'AVIF']}
+                            formats={['auto', 'webp']}
                             layout='fixed'
-                            width={24}
-                            height={24}
+                            width={100}
+                            height={100}
                         />
                     </a>
                 </div>
