@@ -1,4 +1,4 @@
-exports.onCreateWebpackConfig = ({ actions, plugins }) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
     actions.setWebpackConfig({
         // eslint-disable-next-line new-cap
         // plugins: [new plugins.provide({ process: 'process/browser' })],
