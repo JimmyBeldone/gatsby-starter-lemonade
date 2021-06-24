@@ -2,3 +2,5 @@
 /node_modules
 /public
 /_this_is_virtual_fs_path_
+/.git
+/static

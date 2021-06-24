@@ -1,9 +1,9 @@
 module.exports = {
     env: {
         browser: true,
+        es2021: true,
         node: true,
     },
-
     extends: ['plugin:react/recommended', 'airbnb', 'airbnb/hooks', 'prettier'],
     globals: {
         __PATH_PREFIX__: true,
@@ -16,7 +16,8 @@ module.exports = {
         sourceType: 'module',
     },
     // parser: 'babel-eslint',
-    plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
+    plugins: ['react', 'prettier', 'sort-keys-fix', 'sort-destructure-keys'],
+
     root: true,
     rules: {
         'implicit-arrow-linebreak': 0,
@@ -38,5 +39,12 @@ module.exports = {
         'react/sort-prop-types': 1,
         'sort-destructure-keys/sort-destructure-keys': 1,
         'sort-keys-fix/sort-keys-fix': 'warn',
+    },
+    settings: {
+        'import/resolver': {
+            node: {
+                moduleDirectory: ['node_modules', 'src'],
+            },
+        },
     },
 };
