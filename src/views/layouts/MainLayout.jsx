@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Reactotron from 'reactotron-react-js';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Headroom from 'react-headroom';
@@ -12,6 +14,7 @@ console.log(
 );
 
 const MainLayout = ({ children }) => {
+    Reactotron.log('something really interesting happened');
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
