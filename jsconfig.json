@@ -1,29 +1,25 @@
 {
+    "baseUrl": "./",
     "compilerOptions": {
         "target": "es2020",
-        "allowSyntheticDefaultImports": true,
-        "experimentalDecorators": true,
-        "baseUrl": "src",
-        "jsx": "react",
+        "module": "es2015",
+        "baseUrl": "./",
         "paths": {
-            "*": [
-                "*",
-                "src/*"
-            ]
+            "@src/*": ["src/*"],
+            "@constants/*": ["src/constants/*"],
+            "@assets/*": ["src/contents/*"],
+            "@pages/*": ["src/pages/*"],
+            "@components/*": ["src/views/components/*"],
+            "@layouts/*": ["src/views/layouts/*"],
+            "@modules/*": ["src/views/modules/*"],
+            "@screens/*": ["src/views/screens/*"],
+            "@config/*": ["src/config/*"],
+            "@services/*": ["src/services/*"],
+            "@styles/*": ["src/styles/*"],
+            "@helpers/*": ["src/helpers/*"]
         }
     },
-    "typeAcquisition": {
-        "enable": true
-    },
-    "typingOptions": {
-        "enableAutoDiscovery": true
-    },
-    "compileOnSave": true,
-    "allowJS": true,
-    "include": [
-        "src/**/*"
-    ],
     "exclude": [
-        "node_modules"
+        "node_modules", "dist", "public"
     ]
 }

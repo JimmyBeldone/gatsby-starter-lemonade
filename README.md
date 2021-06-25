@@ -34,21 +34,23 @@
 
 ## What's in it ?
 
--   Setup script to make your life easier
+- Setup script to make your life easier
 
--   [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) for fully automated version management and package publishing
+- [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) for fully automated version management and package publishing
 
--   Auto generetaed CHANGELOG.md relying on [Conventionnal Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- Auto generetaed CHANGELOG.md relying on [Conventionnal Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
--   Strong lint config with Eslint configured extended with Airbnb style guide & Prettier
+- Strong lint config with Eslint configured extended with Airbnb style guide & Prettier
 
--   Pre-commit hook that automatically lint & format code
+- [Reactotron](https://infinite.red/reactotron) ready to use (and preconfigured for Redux too)
 
--   PWA
+- Pre-commit hook that automatically lint & format code
 
--   Github actions pre-configured, with staging / production environments
+- PWA
 
--   Netlify ready
+- Github actions pre-configured, with staging / production environments
+
+- Netlify ready
 
 ---
 
@@ -57,6 +59,19 @@
 1. Clone this repo `git clone https://github.com/JimmyBeldone/gatsby-starter-lemonade.git`
 
 2. Run `yarn setup` (install dependencies & remove .git folder) and follow the instructions
+
+---
+
+## Need Redux ?
+
+`yarn add redux react-redux @reduxjs/toolkit redux-persist`
+
+1. Uncomment `src/store/index.js`
+2. Uncomment `<ReduxProvider>` in `src/views/layouts/MainWrapper.jsx`
+3. (optionnal) To use Reactotron with Redux :
+
+- `yarn add reactotron-redux -D`
+- Uncomment Redux config in `src/config/ReactotronConfig.js`
 
 ---
 
@@ -78,12 +93,12 @@ git push -u origin master
 
 3. Your repository url must be set in `package.json`:
 
-```json
-"repository": {
-    "type": "git",
-    "url": "https://github.com/JimmyBeldone/expo-starter-lemonade"
-},
-```
+    ```json
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JimmyBeldone/expo-starter-lemonade"
+    },
+    ```
 
 4. Next time you push on `master` branch, a release will be added if your [conventionnal commit type](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) is correct.
 
@@ -93,16 +108,14 @@ git push -u origin master
 
 1. Create new branches
 
-```bash
-git branch staging && git checkout staging && git push origin staging
-git branch develop && git checkout develop && git push origin develop
-```
+    ```bash
+    git branch staging && git checkout staging && git push origin staging
+    git branch develop && git checkout develop && git push origin develop
+    ```
 
-2. Move `deploy_production.yml` and `deploy_staging.yml` to the `.github/workflows` directory.
+2. Configure these files depending on your needs.
 
-3. Configure these files depending on your needs.
-
-4. Don't forget to add secrets to your repo
+3. Don't forget to add secrets to your repo
 
 ---
 

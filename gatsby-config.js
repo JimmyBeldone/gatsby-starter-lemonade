@@ -113,6 +113,26 @@ module.exports = {
         },
         `gatsby-plugin-offline`,
         `gatsby-plugin-webpack-bundle-analyser-v2`,
+        {
+            options: {
+                alias: {
+                    '@assets': 'src/contents',
+                    '@components': 'src/views/components',
+                    '@config': 'src/config',
+                    '@constants': 'src/constants',
+                    '@helpers': 'src/helpers',
+                    '@layouts': 'src/views/layouts',
+                    '@modules': 'src/views/modules',
+                    '@pages': 'src/pages',
+                    '@screens': 'src/views/screens',
+                    '@services': 'src/services',
+                    '@src': 'src',
+                    '@styles': 'src/styles',
+                },
+                extensions: ['js', 'jsx'],
+            },
+            resolve: `gatsby-plugin-alias-imports`,
+        },
     ],
     siteMetadata: config,
 };
