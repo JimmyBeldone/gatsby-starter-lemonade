@@ -1,3 +1,16 @@
+# [2.1.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.4...v2.1.0) (2021-06-25)
+
+
+### Bug Fixes
+
+* 🐛 remove Reactotron from MainLayout ([55a9b5d](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/55a9b5df9541ab0a554bce2cca0730265c6a2922))
+
+
+### Features
+
+* ✨ add MainWrapper ([fd9f1aa](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/fd9f1aaade26775a05c47f276632bcb4edb2ab0a))
+* ✨ add Redux (disabled) config ([5f1aaf1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/5f1aaf1ee88905f41d69d349718138da7053b937))
+
 ## [2.0.4](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.3...v2.0.4) (2021-06-23)
 
 
