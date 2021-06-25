@@ -1,8 +1,8 @@
-name: DEPLOY_STAGING
+name: DEPLOY_PRODUCTION
 
 on:
-  push:
-    branches: [ staging ]
+  release:
+    types: [ published ]
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
 
@@ -21,13 +21,13 @@ jobs:
 
       - name: Start Build
         env:
-          GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL_STAGING }}
-        run: yarn build:staging
+          GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL }}
+        run: yarn build
 
       - name: Deploy to Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_STAGING }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           npm install netlify-cli -g
           netlify deploy --prod --dir public
