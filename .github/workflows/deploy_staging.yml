@@ -24,10 +24,10 @@ jobs:
           GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL_STAGING }}
         run: yarn build:staging
 
-      - name: Deploy to Netlify
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_STAGING }}
-        run: |
-          npm install netlify-cli -g
-          netlify deploy --prod --dir public
+      # - name: Deploy to Netlify
+      #   env:
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_STAGING }}
+      #   run: |
+      #     npm install netlify-cli -g
+      #     netlify deploy --prod --dir public
