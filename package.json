@@ -112,7 +112,7 @@
         "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.24",
         "husky": "4.3.8",
         "lint-staged": "10.5.4",
-        "prettier": "2.3.1",
+        "prettier": "2.3.2",
         "prompts": "2.4.1",
         "reactotron-react-js": "^3.3.7",
         "replace": "1.2.1",
