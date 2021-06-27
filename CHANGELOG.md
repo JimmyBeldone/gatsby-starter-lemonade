@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.1...v2.1.2) (2021-06-27)
+
+
+### Bug Fixes
+
+* 🐛 env development condition in ReduxProvider for using Reactotron ([9b4b282](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/9b4b282ebc0af6872c9600c16b4dccfe2781e9f9))
+
 ## [2.1.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.0...v2.1.1) (2021-06-26)
 
 
