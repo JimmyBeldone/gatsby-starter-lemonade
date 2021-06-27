@@ -41,7 +41,10 @@ const ReduxProvider = ({ children }) => {
 
     const store = configureStore({
         devTools: true,
-        enhancers: __DEV__ ? [Reactotron.createEnhancer()] : [],
+        enhancers:
+            process.env.NODE_ENV === 'development'
+                ? [Reactotron.createEnhancer()]
+                : [],
         middleware: (getDefaultMiddleware) =>
             getDefaultMiddleware({
                 // immutableCheck: { ignoredPaths: 'taxonomy' },
