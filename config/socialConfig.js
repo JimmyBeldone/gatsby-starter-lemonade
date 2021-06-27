@@ -16,7 +16,7 @@ module.exports = {
         locality: 'Lyon',
         networks: {
             facebook: '',
-            github: `https://github.com/JimmyBeldone/gatsby-reapt/`,
+            github: `https://github.com/JimmyBeldone/gatsby-starter-lemonade/`,
             instagram: '',
             pinterest: '',
             twitter: 'https://twitter.com/@jimmy_dev',
@@ -25,7 +25,7 @@ module.exports = {
         region: '',
         street_address: '',
         title: 'Gatsby Reapt',
-        url: 'https://github.com/JimmyBeldone/gatsby-reapt/',
+        url: 'https://github.com/JimmyBeldone/gatsby-starter-lemonade/',
     },
     copyright: `Copyright © ${new Date().getFullYear()}`,
 };
