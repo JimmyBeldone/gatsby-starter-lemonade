@@ -14,27 +14,16 @@ import {
     REGISTER,
 } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
-import Reactotron from '@config/ReactotronConfig';
 
 import rootReducer from '../store';
+import isBrowser from '../helpers/isBrowser';
 
 const ReduxProvider = ({ children }) => {
     const persistConfig = {
-        // blacklist: ['auth'],
-        blacklist: [],
+        // blacklist: [],
         key: 'root',
         storage,
-        version: 1,
-        // whitelist: ['auth', 'taxonomy'],
-        whitelist: [
-            'auth',
-            'profile',
-            'taxonomy',
-            'interactions',
-            'userView',
-            'chat',
-            'settings',
-        ],
+        whitelist: [],
     };
 
     const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -42,8 +31,8 @@ const ReduxProvider = ({ children }) => {
     const store = configureStore({
         devTools: true,
         enhancers:
-            process.env.NODE_ENV === 'development'
-                ? [Reactotron.createEnhancer()]
+            process.env.NODE_ENV === 'development' && isBrowser()
+                ? [console.tron.createEnhancer()]
                 : [],
         middleware: (getDefaultMiddleware) =>
             getDefaultMiddleware({

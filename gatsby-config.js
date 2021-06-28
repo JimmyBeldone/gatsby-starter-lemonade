@@ -126,7 +126,6 @@ module.exports = {
                     '@pages': 'src/pages',
                     '@screens': 'src/views/screens',
                     '@services': 'src/services',
-                    '@src': 'src',
                     '@styles': 'src/styles',
                 },
                 extensions: ['js', 'jsx'],
