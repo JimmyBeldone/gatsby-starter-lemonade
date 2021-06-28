@@ -5,7 +5,6 @@
         "module": "es2015",
         "baseUrl": "./",
         "paths": {
-            "@src/*": ["src/*"],
             "@constants/*": ["src/constants/*"],
             "@assets/*": ["src/contents/*"],
             "@pages/*": ["src/pages/*"],
