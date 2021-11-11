@@ -10,12 +10,12 @@ const getJsonLd = (
     url,
     lang,
     name,
-    post = null,
     // product = null,
     logo,
     titleAlt,
     articlePrefix,
     siteUrl,
+    post = null,
 ) => {
     const schemaOrgJSONLD = {
         '@context': 'http://schema.org',
