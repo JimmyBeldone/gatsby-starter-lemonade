@@ -12,12 +12,12 @@ module.exports = {
         __DEV__: true,
         __PATH_PREFIX__: true,
     },
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
         },
-        ecmaVersion: 2020,
+        ecmaVersion: 2021,
         sourceType: 'module',
     },
     plugins: [
@@ -41,6 +41,10 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'warn',
         'react-hooks/rules-of-hooks': 'error',
         'react/forbid-prop-types': 0,
+        'react/function-component-definition': [
+            2,
+            { namedComponents: 'arrow-function' },
+        ],
         'react/jsx-filename-extension': [
             'error',
             { extensions: ['.js', '.jsx'] },
@@ -53,5 +57,10 @@ module.exports = {
         'react/sort-prop-types': 1,
         'sort-destructure-keys/sort-destructure-keys': 1,
         'sort-keys-fix/sort-keys-fix': 'warn',
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
     },
 };
