@@ -1,3 +1,10 @@
+## [2.1.5](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.4...v2.1.5) (2021-11-11)
+
+
+### Bug Fixes
+
+* 🐛 update lint-staged ([e788802](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e788802c84fafe9c7dd83d84a9cebe98fb763d38))
+
 ## [2.1.4](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.3...v2.1.4) (2021-11-11)
 
 
