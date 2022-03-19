@@ -7105,7 +7105,7 @@ gatsby-plugin-robots-txt@1.7.0:
     "@babel/runtime" "^7.16.7"
     generate-robotstxt "^8.0.3"
 
-gatsby-plugin-sharp@^4.10.1:
+gatsby-plugin-sharp@4.10.1:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.10.1.tgz#d72145f7649b71a1e5051dcf7ed8f4d1f72bb041"
   integrity sha512-Y+kB5BSfcxMYO5s13W3NDeDH28RCzSa8goo1yQNTISiGaC6iBO4EIEVbUiUBkoLA5nf46J71ve8A3sprZ66bog==
