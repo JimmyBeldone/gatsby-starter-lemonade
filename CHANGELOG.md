@@ -1,3 +1,10 @@
+## [2.1.10](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.9...v2.1.10) (2022-05-12)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency gatsby-plugin-sharp to 4.14.0 ([656c3c8](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/656c3c8a22c0ce92cfd8c2fa83a6b55c5131d082))
+
 ## [2.1.9](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.8...v2.1.9) (2022-05-12)
 
 
