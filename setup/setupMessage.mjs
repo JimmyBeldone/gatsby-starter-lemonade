@@ -1,4 +1,4 @@
-const { icons, log, unicode } = require('./constants');
+import { icons, log, unicode } from './constants.mjs';
 
 log(`
 
