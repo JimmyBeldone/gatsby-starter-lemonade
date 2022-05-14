@@ -1,7 +1,14 @@
 exports.onCreateWebpackConfig = ({ actions }) => {
     actions.setWebpackConfig({
-        node: {
-            fs: `empty`,
+        // eslint-disable-next-line new-cap
+        // plugins: [new plugins.provide({ process: 'process/browser' })],
+        resolve: {
+            alias: {
+                path: require.resolve('path-browserify'),
+            },
+            fallback: {
+                fs: false,
+            },
         },
     });
 };

@@ -3,7 +3,8 @@ const path = require('path');
 const styleResources = require(`./src/styles/styleConfig`);
 const config = require(`./config/siteConfig`);
 
-const activeEnv = process.env.MODE || process.env.NODE_ENV || `development`;
+const activeEnv =
+    process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || `development`;
 console.log(`Using environment config: '${activeEnv}'`);
 
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -32,6 +33,7 @@ const sourceFilesystem = (name, dir = null) => {
 };
 
 module.exports = {
+    flags: { DEV_SSR: false },
     plugins: [
         'gatsby-plugin-eslint',
         `gatsby-plugin-styled-components`,
@@ -62,6 +64,7 @@ module.exports = {
             },
             resolve: `gatsby-plugin-stylus-resources`,
         },
+        `gatsby-plugin-image`,
         `gatsby-transformer-sharp`,
         // {
         //     resolve: 'gatsby-schema-field-absolute-path',
@@ -73,7 +76,6 @@ module.exports = {
         //         },
         //     },
         // },
-        'gatsby-schema-field-absolute-path',
         `gatsby-plugin-sharp`,
         `gatsby-plugin-netlify`,
         `gatsby-plugin-sitemap`,
@@ -111,6 +113,25 @@ module.exports = {
         },
         `gatsby-plugin-offline`,
         `gatsby-plugin-webpack-bundle-analyser-v2`,
+        {
+            options: {
+                alias: {
+                    '@assets': 'src/contents',
+                    '@components': 'src/views/components',
+                    '@config': 'src/config',
+                    '@constants': 'src/constants',
+                    '@helpers': 'src/helpers',
+                    '@layouts': 'src/views/layouts',
+                    '@modules': 'src/views/modules',
+                    '@pages': 'src/pages',
+                    '@screens': 'src/views/screens',
+                    '@services': 'src/services',
+                    '@styles': 'src/styles',
+                },
+                extensions: ['js', 'jsx'],
+            },
+            resolve: `gatsby-plugin-alias-imports`,
+        },
     ],
     siteMetadata: config,
 };

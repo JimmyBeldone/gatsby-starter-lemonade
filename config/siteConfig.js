@@ -1,6 +1,6 @@
-const activeEnv = process.env.MODE || process.env.NODE_ENV || `development`;
+const activeEnv =
+    process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || `development`;
 
-// eslint-disable-next-line import/no-extraneous-dependencies
 require(`dotenv`).config({
     path: `.env.${activeEnv}`,
 });
@@ -17,6 +17,8 @@ module.exports = {
     icon: `src/contents/images/icons/gatsby-icon.png`,
 
     iconName: 'gatsby-icon',
+
+    image: '/images/gatsby-astronaut.png',
 
     keywords: [
         `gatsby-starter-lemonade`,

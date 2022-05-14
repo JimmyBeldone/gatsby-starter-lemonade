@@ -1,3 +1,131 @@
+## [2.1.8](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.7...v2.1.8) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency gatsby-plugin-sharp to 4.10.1 ([999ba31](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/999ba31427a881b6a66ffbfa160ccbd5eedcf71b))
+
+## [2.1.7](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.6...v2.1.7) (2022-03-19)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([99f5cfa](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/99f5cfabadd97a2b0af350b97b4f22abc11dcbf8))
+
+## [2.1.6](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.5...v2.1.6) (2022-03-19)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([84742bd](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/84742bd2877c27d17dc3909a323434224fc73555))
+
+## [2.1.5](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.4...v2.1.5) (2021-11-11)
+
+
+### Bug Fixes
+
+* 🐛 update lint-staged ([e788802](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e788802c84fafe9c7dd83d84a9cebe98fb763d38))
+
+## [2.1.4](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.3...v2.1.4) (2021-11-11)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([746886a](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/746886a885ba9c4439879c4b6e1b8d046ac97d81))
+
+## [2.1.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.2...v2.1.3) (2021-09-01)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([698a904](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/698a904a61018332346338d4052f759f190aec5c))
+
+## [2.1.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.1...v2.1.2) (2021-06-27)
+
+
+### Bug Fixes
+
+* 🐛 env development condition in ReduxProvider for using Reactotron ([9b4b282](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/9b4b282ebc0af6872c9600c16b4dccfe2781e9f9))
+
+## [2.1.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.0...v2.1.1) (2021-06-26)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([1a06a62](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/1a06a622eefe647c8a29d76b661e98d12500abf7))
+
+# [2.1.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.4...v2.1.0) (2021-06-25)
+
+
+### Bug Fixes
+
+* 🐛 remove Reactotron from MainLayout ([55a9b5d](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/55a9b5df9541ab0a554bce2cca0730265c6a2922))
+
+
+### Features
+
+* ✨ add MainWrapper ([fd9f1aa](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/fd9f1aaade26775a05c47f276632bcb4edb2ab0a))
+* ✨ add Redux (disabled) config ([5f1aaf1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/5f1aaf1ee88905f41d69d349718138da7053b937))
+
+## [2.0.4](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.3...v2.0.4) (2021-06-23)
+
+
+### Bug Fixes
+
+* 🐛 remove avif format ([e037488](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e037488a5722b84d0606e929b25d00f2845f9acf))
+* 🐛 update dependencies ([166ea2e](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/166ea2e9fae57a4eeefce902757865cd13d0cdf5))
+
+## [2.0.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.2...v2.0.3) (2021-06-03)
+
+
+### Bug Fixes
+
+* 🐛 update devDependencies ([f25ce97](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/f25ce97acd95271fe310f0549e7069ed2669c1ba))
+
+## [2.0.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.1...v2.0.2) (2021-06-03)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([05f6f4c](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/05f6f4c566bf385f906f94e394a8af95e91ea5ef))
+* 🐛 update dev dependencies ([11a63f7](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/11a63f78ab9c2e32c98a6873d4c1cb7e67938931))
+
+## [2.0.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.0.0...v2.0.1) (2021-03-09)
+
+
+### Bug Fixes
+
+* 🐛 update deps ([ee954c5](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/ee954c5c990437fa08b0b2f75a028e4ceac2b4eb))
+
+# [2.0.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.8...v2.0.0) (2021-03-09)
+
+
+### Features
+
+* ✨ gatsby-plugin-image + code review for v3 ([a8b311c](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/a8b311c3998ea02011ca9effe98e7b5987c7df5a))
+* 💥 ✨ gatsby v3 migration ([6432546](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/64325462bc0ddb15a4154958e7f6de343cff1a92))
+
+
+### BREAKING CHANGES
+
+* - Gatsby v3
+- Webpack v5
+
+## [1.1.8](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.7...v1.1.8) (2021-01-24)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([fb0ebc5](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/fb0ebc52cd511ac1ddd72c690d2913d93113f5f9))
+
+## [1.1.7](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.6...v1.1.7) (2020-12-09)
+
+
+### Bug Fixes
+
+* add staging CI + doc ([44948f1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/44948f15d6408a74e580b3f5d74cbfe526bc194f))
+* remove grommet ([8339dbf](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/8339dbf8ed472dbd81007aa08afb978094859e96))
+
 ## [1.1.6](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v1.1.5...v1.1.6) (2020-12-08)
 
 

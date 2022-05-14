@@ -1,4 +1,4 @@
-import siteConfig from '../../../../config/siteConfig';
+// import siteConfig from '../../../../config/siteConfig';
 import { author, business } from '../../../../config/socialConfig';
 
 const getJsonLd = (
@@ -9,10 +9,13 @@ const getJsonLd = (
     contentType,
     url,
     lang,
-    post = null,
+    name,
     // product = null,
     logo,
     titleAlt,
+    articlePrefix,
+    siteUrl,
+    post = null,
 ) => {
     const schemaOrgJSONLD = {
         '@context': 'http://schema.org',
@@ -63,12 +66,12 @@ const getJsonLd = (
             },
             keywords,
             mainEntityOfPage: {
-                '@id': siteConfig.siteUrl + siteConfig.articlePrefix,
+                '@id': siteUrl + articlePrefix,
                 '@type': 'WebPage',
             },
             publisher: {
                 '@type': 'Organization',
-                logo: siteConfig.siteUrl + logo,
+                logo: siteUrl + logo,
                 name: business.title,
                 url: business.url,
             },

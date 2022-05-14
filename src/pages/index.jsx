@@ -1,23 +1,20 @@
-import { graphql } from 'gatsby';
-import { useBreakpoint } from 'gatsby-plugin-breakpoints';
-import PropTypes from 'prop-types';
+// import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+// import PropTypes from 'prop-types';
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import SEO from '../views/components/SEO';
+import SEO from '../views/components/SEO/index';
 import MainLayout from '../views/layouts/MainLayout';
-import Image from '../views/components/Image';
+// import logo from '../contents/images/icons/gatsby-icon.png';
 
-const IndexPage = ({ data, location }) => {
-    const breakpoints = useBreakpoint();
-    console.log(breakpoints);
+// eslint-disable-next-line arrow-body-style
+const IndexPage = () => {
+    // const breakpoints = useBreakpoint();
+    // console.log(breakpoints);
 
     return (
         <MainLayout>
-            <SEO
-                title='Homepage title'
-                location={location}
-                description='Page 1 description'
-            />
+            <SEO title='Homepage title' description='Page 1 description' />
             <div className='container'>
                 <h1>Welcome</h1>
 
@@ -28,9 +25,14 @@ const IndexPage = ({ data, location }) => {
                         target='_blank'
                         rel='noreferrer'
                     >
-                        <Image
-                            fixed={data.file.childImageSharp.fixed}
+                        <StaticImage
                             alt='gatsby icon'
+                            src='../contents/images/icons/gatsby-icon.png'
+                            // src={logo}
+                            formats={['auto', 'webp']}
+                            layout='fixed'
+                            width={100}
+                            height={100}
                         />
                     </a>
                 </div>
@@ -39,22 +41,4 @@ const IndexPage = ({ data, location }) => {
     );
 };
 
-IndexPage.propTypes = {
-    data: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired,
-};
-
 export default IndexPage;
-
-export const query = graphql`
-    query homePicture {
-        file(relativePath: { eq: "gatsby-icon.png" }) {
-            childImageSharp {
-                fixed(width: 24) {
-                    ...GatsbyImageSharpFixed_withWebp
-                    src
-                }
-            }
-        }
-    }
-`;

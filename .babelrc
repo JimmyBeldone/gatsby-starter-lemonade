@@ -1,0 +1,13 @@
+{
+    "presets": [
+        "babel-preset-gatsby"
+    ],
+    "plugins": [],
+    "env": {
+        "test": {
+            "presets": [
+                "react-app"
+            ]
+        }
+    }
+}
