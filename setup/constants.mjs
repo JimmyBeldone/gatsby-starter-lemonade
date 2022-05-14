@@ -1,4 +1,4 @@
-const icons = {
+export const icons = {
     biceps: 0x1f4aa,
     broom: 0x1f9f9,
     check: 0x2705,
@@ -12,12 +12,12 @@ const icons = {
     wink: 0x1f609,
 };
 
-const unicode = (code) => String.fromCodePoint(code);
+export const unicode = (code) => String.fromCodePoint(code);
 
-const { log } = console;
+export const { log } = console;
 
-module.exports = {
-    icons,
-    log,
-    unicode,
-};
+// module.exports = {
+//     icons,
+//     log,
+//     unicode,
+// };

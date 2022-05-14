@@ -1,16 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const chalk = require('chalk');
-const { icons, unicode } = require('./constants');
+import chalk from 'chalk';
+
+import { icons, unicode } from './constants.mjs';
 
 const chalkBg = chalk.bgGreen;
 
-const cancelMessage = `
+export const cancelMessage = `
 
 Not ready, I get it. Maybe next time !  ${unicode(icons.wink)}
 
 `;
 
-const intalledMessage = `
+export const intalledMessage = `
 ${unicode(icons.check)}  Alright ! Dependencies installed !
 
 ${chalkBg('                                         ')}
@@ -19,24 +20,24 @@ ${chalkBg('                                         ')}
 ${unicode(icons.trash)}  Preparing to delete local git repository...\n
 `;
 
-const pkgIntroMesage = `
+export const pkgIntroMesage = `
 ${chalkBg('                                         ')}
 
 
 ${unicode(icons.tree)}  Now let's pimp your package.json file \n
 `;
 
-const pkgAllSetMessage = `\n${unicode(
+export const pkgAllSetMessage = `\n${unicode(
     icons.check,
 )}  Your package.json is set !\n`;
 
-const cleanUpMessage = `
+export const cleanUpMessage = `
 ${chalkBg('                                         ')}
 
 
 ${unicode(icons.broom)}  Cleaning up setup files... \n\n`;
 
-const finalMessage = `
+export const finalMessage = `
 ${chalkBg('                                         ')}
 
 
@@ -54,21 +55,10 @@ ${unicode(icons.rocket)}  Starting server ...
 
 `;
 
-const gitDeleteMessage = `\n${unicode(
+export const gitDeleteMessage = `\n${unicode(
     icons.check,
 )}  Original Git repository removed ! \n `;
 
-const gitNoDeleteMessage = `\n${unicode(
+export const gitNoDeleteMessage = `\n${unicode(
     icons.cross,
 )}  Git repository won't be removed  \n `;
-
-module.exports = {
-    cancelMessage,
-    cleanUpMessage,
-    finalMessage,
-    gitDeleteMessage,
-    gitNoDeleteMessage,
-    intalledMessage,
-    pkgAllSetMessage,
-    pkgIntroMesage,
-};

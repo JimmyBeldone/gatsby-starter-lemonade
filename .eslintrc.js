@@ -18,6 +18,7 @@ module.exports = {
             jsx: true,
         },
         ecmaVersion: 2021,
+        requireConfigFile: false,
         sourceType: 'module',
     },
     plugins: [

@@ -1,14 +1,18 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const chalk = require('chalk');
-const prompts = require('prompts');
-const replace = require('replace');
-const rimraf = require('rimraf');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+import chalk from 'chalk';
 
-const { log } = require('./constants');
-const questions = require('./setupPrompts');
-const {
+import prompts from 'prompts';
+import replace from 'replace';
+import rimraf from 'rimraf';
+// import util from 'util';
+// import { exec } from 'child_process';
+
+import { log } from './constants.mjs';
+import questions from './setupPrompts.mjs';
+
+// const exec = util.promisify(require('child_process').exec);
+
+import {
     cancelMessage,
     cleanUpMessage,
     finalMessage,
@@ -17,7 +21,7 @@ const {
     intalledMessage,
     pkgAllSetMessage,
     pkgIntroMesage,
-} = require('./messages');
+} from './messages.mjs';
 
 const chalkBold = chalk.bold.white;
 
@@ -110,6 +114,7 @@ const updatePackage = async () => {
 
     // Remove setup dependencies
     async function cleanDeps() {
+        const { exec } = await import('child_process');
         const { stdout } = await exec('yarn remove chalk prompts replace -D');
         console.log('stdout:', stdout);
     }
