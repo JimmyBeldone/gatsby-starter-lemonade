@@ -1,3 +1,10 @@
+## [2.1.12](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.11...v2.1.12) (2022-05-19)
+
+
+### Bug Fixes
+
+* 🐛 add replace package for setup script ([1d8f1e3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/1d8f1e39ecc105ee6e967dda8612b1de342ebd22))
+
 ## [2.1.11](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.10...v2.1.11) (2022-05-14)
 
 
