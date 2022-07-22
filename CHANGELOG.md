@@ -1,3 +1,15 @@
+# [2.2.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.12...v2.2.0) (2022-07-22)
+
+
+### Bug Fixes
+
+* create noopStorage to avoid redux-persist error on server-side ([e656250](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e6562501f5520e884d180f1477e8d9792cff8414))
+
+
+### Features
+
+* add storage.js file ([9c8a697](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/9c8a697129403e3356b26bc28c14232ac8926be4))
+
 ## [2.1.12](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.11...v2.1.12) (2022-05-19)
 
 
