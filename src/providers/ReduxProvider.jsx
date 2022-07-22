@@ -1,7 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import propTypes from 'prop-types';
 import React from 'react';
-import storage from 'redux-persist/lib/storage';
+// import storage from 'redux-persist/lib/storage';
+import storage from '@helpers/storage';
 import { Provider } from 'react-redux';
 import {
     persistStore,
