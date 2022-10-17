@@ -1,7 +1,7 @@
+/* eslint-disable import/no-import-module-exports */
 import { configureStore } from '@reduxjs/toolkit';
 import propTypes from 'prop-types';
 import React from 'react';
-// import storage from 'redux-persist/lib/storage';
 import storage from '@helpers/storage';
 import { Provider } from 'react-redux';
 import {
@@ -57,8 +57,7 @@ const ReduxProvider = ({ children }) => {
 
     if (process.env.NODE_ENV === 'development' && module.hot) {
         module.hot.accept('../store', () => {
-            const newRootReducer = require('../store').default;
-            store.replaceReducer(persistReducer(persistConfig, newRootReducer));
+            store.replaceReducer(persistReducer(persistConfig, rootReducer));
         });
     }
 
