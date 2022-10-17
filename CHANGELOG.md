@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.2.1...v2.3.0) (2022-10-17)
+
+
+### Features
+
+* ✨ add redux by default ([7a9ed8e](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/7a9ed8e568825ea02eaa92f4582d343a4fe70b6b))
+
 ## [2.2.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.2.0...v2.2.1) (2022-10-17)
 
 
