@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable import/no-extraneous-dependencies */
 import { createClient } from 'reactotron-core-client';
-// import { reactotronRedux } from 'reactotron-redux';
+import { reactotronRedux } from 'reactotron-redux';
 
 import isBrowser from '@helpers/isBrowser';
 
@@ -46,9 +46,7 @@ if (process.env.NODE_ENV === 'development' && isBrowser()) {
 
     const Reactotron = createClient(client);
 
-    const tron = Reactotron.configure()
-        // .use(reactotronRedux())
-        .connect();
+    const tron = Reactotron.configure().use(reactotronRedux()).connect();
 
     tron.clear();
 
