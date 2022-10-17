@@ -1,3 +1,44 @@
+# [2.2.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.12...v2.2.0) (2022-07-22)
+
+
+### Bug Fixes
+
+* create noopStorage to avoid redux-persist error on server-side ([e656250](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/e6562501f5520e884d180f1477e8d9792cff8414))
+
+
+### Features
+
+* add storage.js file ([9c8a697](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/9c8a697129403e3356b26bc28c14232ac8926be4))
+
+## [2.1.12](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.11...v2.1.12) (2022-05-19)
+
+
+### Bug Fixes
+
+* 🐛 add replace package for setup script ([1d8f1e3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/1d8f1e39ecc105ee6e967dda8612b1de342ebd22))
+
+## [2.1.11](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.10...v2.1.11) (2022-05-14)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([258ce81](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/258ce81cb44405c4d3b731001c851501f3c001c1))
+
+## [2.1.10](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.9...v2.1.10) (2022-05-12)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency gatsby-plugin-sharp to 4.14.0 ([656c3c8](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/656c3c8a22c0ce92cfd8c2fa83a6b55c5131d082))
+
+## [2.1.9](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.8...v2.1.9) (2022-05-12)
+
+
+### Bug Fixes
+
+* 🐛 update dependencies ([2215f9e](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/2215f9ea766cd32796b12ee9e1502ac1f973aa1a))
+* 🐛 update dependencies ([b87e0f6](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/b87e0f6c3c47c859925ba023d1aebff7b9c5a528))
+
 ## [2.1.8](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.1.7...v2.1.8) (2022-03-19)
 
 
