@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.0...v2.3.1) (2022-10-18)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([af3747d](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/af3747d292edf836e93de6dee6b3e920515b056f))
+
 # [2.3.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.2.1...v2.3.0) (2022-10-17)
 
 
