@@ -120,7 +120,7 @@
         "gatsby-plugin-eslint": "4.0.2",
         "gatsby-plugin-stylus-resources": "2.0.5",
         "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.30",
-        "husky": "8.0.1",
+        "husky": "8.0.3",
         "lint-staged": "13.0.3",
         "prettier": "2.7.1",
         "reactotron-react-js": "3.3.8",
