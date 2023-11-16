@@ -1,6 +1,4 @@
 import React from 'react';
-import 'typeface-montserrat';
-import 'typeface-lato';
 
 import './src/styles/global.styl';
 import MainWrapper from './src/views/layouts/MainWrapper';
