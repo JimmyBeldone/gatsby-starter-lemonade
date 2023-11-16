@@ -128,7 +128,7 @@
             "eslint --fix",
             "prettier --write"
         ],
-        "*.{html,json}": "prettier --write"
+        "*.{css,styl}": "stylelint --fix"
     },
     "config": {
         "commitizen": {
