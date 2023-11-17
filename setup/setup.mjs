@@ -129,7 +129,7 @@ const updatePackage = async () => {
         writeMessage(finalMessage);
 
         // remove all setup scripts from the 'tools' folder
-        rimraf(setupPath, (rmError) => {
+        rimraf(setupPath).then((rmError) => {
             if (rmError) throw new Error(rmError);
         });
     });
