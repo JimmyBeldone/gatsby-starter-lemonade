@@ -1,3 +1,10 @@
+## [2.4.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.4.1...v2.4.2) (2023-11-17)
+
+
+### Bug Fixes
+
+* 🐛 rimraf promise ([bf86adc](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/bf86adcdce140e295366a69d1d6b66469ca4b996))
+
 ## [2.4.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.4.0...v2.4.1) (2023-11-17)
 
 
