@@ -129,9 +129,13 @@ const updatePackage = async () => {
         writeMessage(finalMessage);
 
         // remove all setup scripts from the 'setup' folder
-        rimraf(setupPath).catch((error) => {
-            throw new Error(error);
-        });
+        rimraf(setupPath)
+            .then((resp) => {
+                console.log('Delete setup folder :', resp);
+            })
+            .catch((error) => {
+                throw new Error(error);
+            });
     });
 };
 
