@@ -1,6 +1,6 @@
-import { icons, log, unicode } from './constants.mjs';
+import { icons, unicode } from './constants.mjs';
 
-log(`
+console.log(`
 
 ==========================================
 

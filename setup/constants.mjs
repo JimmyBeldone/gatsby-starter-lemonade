@@ -14,10 +14,8 @@ export const icons = {
 
 export const unicode = (code) => String.fromCodePoint(code);
 
-export const { log } = console;
+export const pkgJsonPathPrefix =
+    process.env.MODE === 'test' ? 'setupCopy/' : '';
 
-// module.exports = {
-//     icons,
-//     log,
-//     unicode,
-// };
+export const setupPath =
+    process.env.MODE === 'test' ? './setupCopy' : './setup';
