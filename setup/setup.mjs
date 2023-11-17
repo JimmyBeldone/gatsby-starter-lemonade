@@ -128,9 +128,9 @@ const updatePackage = async () => {
     cleanDeps().then(() => {
         writeMessage(finalMessage);
 
-        // remove all setup scripts from the 'tools' folder
-        rimraf(setupPath).then((rmError) => {
-            if (rmError) throw new Error(rmError);
+        // remove all setup scripts from the 'setup' folder
+        rimraf(setupPath).catch((error) => {
+            throw new Error(error);
         });
     });
 };
