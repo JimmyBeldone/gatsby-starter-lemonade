@@ -1,3 +1,11 @@
+## [2.3.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.2...v2.3.3) (2023-11-17)
+
+
+### Bug Fixes
+
+* 🐛 CI permissions ([39acebd](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/39acebd482255be2a597a0358e0e846453ee6466))
+* 🐛 update dependencies ([6cf1dc9](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/6cf1dc921af3a7732aa5076da9deb2a7a9302b4d))
+
 ## [2.3.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.1...v2.3.2) (2023-11-17)
 
 
