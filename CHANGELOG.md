@@ -1,3 +1,16 @@
+## [2.3.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.1...v2.3.2) (2023-11-17)
+
+
+### Bug Fixes
+
+* 🐛 action/setup-node@v4 ([a6e6b4e](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/a6e6b4e1dfc796a4e44e15a39703d0a4a8605732))
+* 🐛 CI publish ([6d7a420](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/6d7a420f09927b11a4fe0f1f88156b60a99874b6))
+* 🐛 test CI ([7d81889](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/7d81889f10762b660d8da1edbf05d52ef0330633))
+* 🐛 update dependencies ([2b6cc77](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/2b6cc778090b5cc1b95b15f62f2a0775520c4479))
+* 🐛 update dependencies ([66b0260](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/66b0260f7464a0f732ee21515b128018bc7e7649))
+* **deps:** 🐛 pin dependencies ([22d0836](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/22d0836f58e870660a1b651a555c0cb47093ad81))
+* **deps:** 🐛 pin dependencies ([6fefb12](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/6fefb121ff50a4ce505a00424a3883273dbc69cd))
+
 ## [2.3.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.0...v2.3.1) (2022-10-18)
 
 
