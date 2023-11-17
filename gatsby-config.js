@@ -36,25 +36,12 @@ module.exports = {
     flags: { DEV_SSR: false },
     plugins: [
         'gatsby-plugin-eslint',
-        `gatsby-plugin-styled-components`,
         `gatsby-plugin-react-helmet-async`,
-        // {
-        //     resolve: `gatsby-plugin-react-helmet-canonical-urls`,
-        //     options: {
-        //         siteUrl: config.siteUrl,
-        //     },
-        // },
         {
             options: {
                 queries: defaultQueries,
             },
             resolve: 'gatsby-plugin-breakpoints',
-        },
-        {
-            options: {
-                pathToConfigModule: `config/typography.js`,
-            },
-            resolve: `gatsby-plugin-typography`,
         },
         sourceFilesystem('images-app', 'images/app'),
         sourceFilesystem('icons', 'images/icons'),
@@ -66,16 +53,6 @@ module.exports = {
         },
         `gatsby-plugin-image`,
         `gatsby-transformer-sharp`,
-        // {
-        //     resolve: 'gatsby-schema-field-absolute-path',
-        //     options: {
-        //         // or c. object with named field extension
-        //         dirs: {
-        //             'content/assets': 'fileByAssetPath',
-        //             'src/contents/images': 'fileByImagePath',
-        //         },
-        //     },
-        // },
         `gatsby-plugin-sharp`,
         `gatsby-plugin-netlify`,
         `gatsby-plugin-sitemap`,
