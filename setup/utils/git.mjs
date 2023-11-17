@@ -101,12 +101,15 @@ export const promptGitRemote = async () => {
         await runGitInit();
         await runAddGitRemote(promptElement.value);
         await runSetMainBranch();
-        await runGitAdd();
-        await runGitCommit();
-        await runGitPush();
     } else {
         writeMessage(gitNoDeleteMessage);
     }
+};
+
+export const finishGitConfig = async () => {
+    await runGitAdd();
+    await runGitCommit();
+    await runGitPush();
 };
 
 export const manageGit = async () => {
