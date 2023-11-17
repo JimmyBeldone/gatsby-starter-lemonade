@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import chalk from 'chalk';
+import { exec } from 'child_process';
 
 import prompts from 'prompts';
 import replace from 'replace';
@@ -36,6 +37,13 @@ const onCancel = () => {
 
 const pkgJsonPathPrefix = process.env.MODE === 'test' ? 'setupCopy/' : '';
 const setupPath = process.env.MODE === 'test' ? './setupCopy' : './setup';
+
+// lancer la commande 'git init'
+const gitInit = async () => {
+    const { stderr, stdout } = await exec('git init');
+    console.log('stdout:', stdout);
+    console.log('stderr:', stderr);
+};
 
 // Update package.json
 const updatePackage = async () => {
@@ -114,7 +122,6 @@ const updatePackage = async () => {
 
     // Remove setup dependencies
     async function cleanDeps() {
-        const { exec } = await import('child_process');
         const { stdout } = await exec('yarn remove chalk prompts replace -D');
         console.log('stdout:', stdout);
     }
@@ -126,13 +133,6 @@ const updatePackage = async () => {
             if (rmError) throw new Error(rmError);
         });
     });
-
-    // writeMessage(finalMessage);
-
-    // // remove all setup scripts from the 'tools' folder
-    // rimraf(setupPath, (rmError) => {
-    //     if (rmError) throw new Error(rmError);
-    // });
 };
 
 // Initialize prompt
@@ -157,7 +157,50 @@ const updatePackage = async () => {
                 rimraf('.git', (error) => {
                     if (error) throw new Error(error);
                     writeMessage(gitDeleteMessage);
-                    updatePackage();
+
+                    // lance la commande 'git init'
+                    gitInit().then(() => {
+                        // ask for git remote url
+                        prompts(
+                            {
+                                initial: '',
+                                message:
+                                    'Git remote URL (ex: "git@github.com:JimmyBeldone/gatsby-starter-lemonade.git")',
+                                name: 'value',
+                                type: 'text',
+                            },
+                            { onCancel },
+                        ).then((res) => {
+                            // set git remote url
+                            exec(
+                                `git remote add origin ${res.value}`,
+                                (err) => {
+                                    if (err) {
+                                        console.error(err);
+                                        return;
+                                    }
+
+                                    exec('git branch -M main', (errBranch) => {
+                                        if (errBranch) {
+                                            console.error(errBranch);
+                                            return;
+                                        }
+                                        // push to remote
+                                        exec(
+                                            'git push -u origin master',
+                                            (errPush) => {
+                                                if (errPush) {
+                                                    console.error(errPush);
+                                                    return;
+                                                }
+                                                updatePackage();
+                                            },
+                                        );
+                                    });
+                                },
+                            );
+                        });
+                    });
                 });
             }
         } else {

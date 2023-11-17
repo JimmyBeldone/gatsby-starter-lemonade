@@ -1,7 +1,18 @@
+/* eslint-disable no-underscore-dangle */
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Obtenir le chemin du fichier actuel
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Obtenir le nom du dossier de l'application
+const appName = path.basename(path.resolve(__dirname, '..'));
+
 // Define prompts for use with npm 'prompt' module in setup script
 export default [
     {
-        initial: 'my-new-project',
+        initial: appName,
         message: 'Project name',
         name: 'name',
         type: 'text',
