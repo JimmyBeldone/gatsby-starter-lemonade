@@ -1,30 +1,34 @@
-name: TESTING_STAGING
+name: Testing Staging
 
 on:
   pull_request:
-    branches: [ staging ]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: 18
 
-      - uses: actions/cache@v3
+      - name: Cache dependencies
+        uses: actions/cache@v3
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: yarn
 
-      - name: Start Build
+      - name: Build Gatsby
+        run: yarn build:staging
         # env:
         #   GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL_STAGING }}
-        run: yarn build:staging

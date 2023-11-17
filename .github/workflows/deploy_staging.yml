@@ -1,28 +1,46 @@
-name: DEPLOY_STAGING
+name: Deploy Staging
 
 on:
-  push:
-    branches: [ staging ]
+  release:
+    types:
+      - published
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: 18
 
-      - name: Install dependencies
-        run: yarn install
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
-      - name: Start Build
-        env:
-          GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL_STAGING }}
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Build Gatsby
         run: yarn build:staging
+        # env:
+        #   GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL_STAGING }}
+
+      # - name: Download Build Artifact
+      #   uses: actions/download-artifact@v3
+      #   with:
+      #     name: gatsby-build-staging
+      #     # path: public
+
+      # - name: Display structure of downloaded files
+      #   run: ls -R
 
       # - name: Deploy to Netlify
       #   env:
