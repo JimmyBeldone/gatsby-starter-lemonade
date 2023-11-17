@@ -1,8 +1,8 @@
 import { intalledMessage } from './messages.mjs';
 import { startPackageJsonPrompts } from './utils/packageJson.mjs';
 import { manageGit } from './utils/git.mjs';
-import { writeMessage } from './utils/consoleLog.mjs';
-import { startCleanUp } from './utils/cleanUp';
+import { writeMessage, writeMessageValid } from './utils/consoleLog.mjs';
+import { startCleanUp } from './utils/cleanUp.mjs';
 
 const setupStart = async () => {
     writeMessage(intalledMessage);
@@ -11,12 +11,14 @@ const setupStart = async () => {
 
     await startPackageJsonPrompts();
 
-    await startCleanUp();
+    if (!process.env.MODE === 'test') {
+        await startCleanUp();
+    }
 };
 
 setupStart()
     .then(() => {
-        console.log('Setup finished');
+        writeMessageValid('Setup finished');
     })
     .catch((error) => {
         throw new Error(error);

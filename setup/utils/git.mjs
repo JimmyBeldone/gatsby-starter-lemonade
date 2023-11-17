@@ -1,15 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import rimraf from 'rimraf';
+import { rimraf } from 'rimraf';
 import { exec } from 'child_process';
 import prompts from 'prompts';
 
-import { onCancel, writeMessage } from './consoleLog.mjs';
+import { onCancel, writeMessage, writeMessageValid } from './consoleLog.mjs';
 import { gitNoDeleteMessage } from '../messages.mjs';
 
 export const removeGitFolder = async () =>
     rimraf('.git')
         .then(() => {
-            console.log('Git folder deleted !');
+            writeMessageValid('Original Git repository removed !');
         })
         .catch((error) => {
             throw new Error(error);
@@ -22,7 +22,7 @@ const runGitInit = async () =>
                 console.error(err);
                 return;
             }
-            console.log('Git initialized !');
+            writeMessageValid('Git initialized !');
             resolve();
         });
     });
@@ -34,7 +34,7 @@ const runAddGitRemote = async (remoteUrl) =>
                 console.error(err);
                 return;
             }
-            console.log('Git remote added !');
+            writeMessageValid('Git remote added !');
             resolve();
         });
     });
@@ -46,7 +46,7 @@ const runSetMainBranch = async () =>
                 console.error(err);
                 return;
             }
-            console.log('Main branch set !');
+            writeMessageValid('Main branch set !');
             resolve();
         });
     });
@@ -58,7 +58,7 @@ const runGitAdd = async () =>
                 console.error(err);
                 return;
             }
-            console.log('Git add done !');
+            writeMessageValid('Git add done !');
             resolve();
         });
     });
@@ -70,7 +70,7 @@ const runGitCommit = async () =>
                 console.error(err);
                 return;
             }
-            console.log('Git commit done !');
+            writeMessageValid('Git commit done !');
             resolve();
         });
     });
@@ -82,7 +82,7 @@ const runGitPush = async () =>
                 console.error(err);
                 return;
             }
-            console.log('Git push done !');
+            writeMessageValid('Git push done !');
             resolve();
         });
     });
@@ -105,7 +105,7 @@ export const promptGitRemote = async () => {
         await runGitCommit();
         await runGitPush();
     } else {
-        console.log('Git remote not added !');
+        writeMessage(gitNoDeleteMessage);
     }
 };
 
