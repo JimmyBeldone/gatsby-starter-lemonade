@@ -130,8 +130,8 @@ const updatePackage = async () => {
 
         // remove all setup scripts from the 'setup' folder
         rimraf(setupPath)
-            .then((resp) => {
-                console.log('Delete setup folder :', resp);
+            .then(() => {
+                console.log('Setup folder Deleted');
             })
             .catch((error) => {
                 throw new Error(error);
@@ -158,54 +158,62 @@ const updatePackage = async () => {
                 writeMessage(gitDeleteMessage);
                 updatePackage();
             } else {
-                rimraf('.git', (error) => {
-                    if (error) throw new Error(error);
-                    writeMessage(gitDeleteMessage);
+                rimraf('.git')
+                    .then(() => {
+                        writeMessage(gitDeleteMessage);
 
-                    // lance la commande 'git init'
-                    gitInit().then(() => {
-                        // ask for git remote url
-                        prompts(
-                            {
-                                initial: '',
-                                message:
-                                    'Git remote URL (ex: "git@github.com:JimmyBeldone/gatsby-starter-lemonade.git")',
-                                name: 'value',
-                                type: 'text',
-                            },
-                            { onCancel },
-                        ).then((res) => {
-                            // set git remote url
-                            exec(
-                                `git remote add origin ${res.value}`,
-                                (err) => {
-                                    if (err) {
-                                        console.error(err);
-                                        return;
-                                    }
-
-                                    exec('git branch -M main', (errBranch) => {
-                                        if (errBranch) {
-                                            console.error(errBranch);
+                        // lance la commande 'git init'
+                        gitInit().then(() => {
+                            // ask for git remote url
+                            prompts(
+                                {
+                                    initial: '',
+                                    message:
+                                        'Git remote URL (ex: "git@github.com:JimmyBeldone/gatsby-starter-lemonade.git")',
+                                    name: 'value',
+                                    type: 'text',
+                                },
+                                { onCancel },
+                            ).then((res) => {
+                                // set git remote url
+                                exec(
+                                    `git remote add origin ${res.value}`,
+                                    (err) => {
+                                        if (err) {
+                                            console.error(err);
                                             return;
                                         }
-                                        // push to remote
+
                                         exec(
-                                            'git push -u origin master',
-                                            (errPush) => {
-                                                if (errPush) {
-                                                    console.error(errPush);
+                                            'git branch -M main',
+                                            (errBranch) => {
+                                                if (errBranch) {
+                                                    console.error(errBranch);
                                                     return;
                                                 }
-                                                updatePackage();
+                                                // push to remote
+                                                exec(
+                                                    'git push -u origin master',
+                                                    (errPush) => {
+                                                        if (errPush) {
+                                                            console.error(
+                                                                errPush,
+                                                            );
+                                                            return;
+                                                        }
+                                                        updatePackage();
+                                                    },
+                                                );
                                             },
                                         );
-                                    });
-                                },
-                            );
+                                    },
+                                );
+                            });
                         });
+                    })
+                    .catch((error) => {
+                        throw new Error(error);
                     });
-                });
             }
         } else {
             writeMessage(gitNoDeleteMessage);
