@@ -6,7 +6,12 @@ on:
       - main
 
 jobs:
-  build:
+  release:
+    permissions:
+      contents: write
+      issues: write
+      packages: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -29,7 +34,7 @@ jobs:
         run: yarn
 
       - name: Semantic Release
-        run: npx semantic-release --branches main
+        run: npx semantic-release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          # GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
