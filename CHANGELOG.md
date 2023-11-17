@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.4.0...v2.4.1) (2023-11-17)
+
+
+### Bug Fixes
+
+* 🐛 rimraf import default ([97901a0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/97901a01e1a34cc796b42b514f97f9d8ae98559a))
+
 # [2.4.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.3...v2.4.0) (2023-11-17)
 
 
