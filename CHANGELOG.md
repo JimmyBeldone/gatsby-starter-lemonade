@@ -1,3 +1,11 @@
+## [2.5.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.5.0...v2.5.1) (2023-11-17)
+
+
+### Bug Fixes
+
+* 🐛 final setup script ([47d9126](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/47d912621822504e8202f68234516efb9d7afdd4))
+* 🐛 setup script ([51fb1b9](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/51fb1b94cd82afe34f06ae3f8767dfad426190b7))
+
 # [2.5.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.4.5...v2.5.0) (2023-11-17)
 
 
