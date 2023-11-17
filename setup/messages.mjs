@@ -55,10 +55,6 @@ ${unicode(icons.rocket)}  Starting server ...
 
 `;
 
-export const gitDeleteMessage = `\n${unicode(
-    icons.check,
-)}  Original Git repository removed ! \n `;
-
 export const gitNoDeleteMessage = `\n${unicode(
     icons.cross,
 )}  Git repository won't be removed  \n `;
