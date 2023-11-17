@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.3...v2.4.0) (2023-11-17)
+
+
+### Features
+
+* ✨ better setup script & prompts ([b6e6522](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/b6e6522fb95e1608efe1aa7ef5867ca0c75a1e15))
+
 ## [2.3.3](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.3.2...v2.3.3) (2023-11-17)
 
 
