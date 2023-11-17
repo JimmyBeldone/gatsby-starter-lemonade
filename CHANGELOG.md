@@ -1,3 +1,10 @@
+## [2.5.2](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.5.1...v2.5.2) (2023-11-17)
+
+
+### Bug Fixes
+
+* 🐛 improv setup scripts ([5875858](https://github.com/JimmyBeldone/gatsby-starter-lemonade/commit/58758588934778f1bd162e5a1eb5c2cc1ee768bc))
+
 ## [2.5.1](https://github.com/JimmyBeldone/gatsby-starter-lemonade/compare/v2.5.0...v2.5.1) (2023-11-17)
 
 
