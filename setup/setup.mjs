@@ -1,6 +1,6 @@
-import { intalledMessage } from './messages.mjs';
+import { finalMessage, intalledMessage } from './messages.mjs';
 import { startPackageJsonPrompts } from './utils/packageJson.mjs';
-import { manageGit } from './utils/git.mjs';
+import { finishGitConfig, manageGit } from './utils/git.mjs';
 import { writeMessage, writeMessageValid } from './utils/consoleLog.mjs';
 import { startCleanUp } from './utils/cleanUp.mjs';
 
@@ -13,6 +13,9 @@ const setupStart = async () => {
 
     if (!process.env.MODE === 'test') {
         await startCleanUp();
+        await finishGitConfig();
+
+        writeMessage(finalMessage);
     }
 };
 

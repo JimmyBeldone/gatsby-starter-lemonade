@@ -3,7 +3,7 @@ import { rimraf } from 'rimraf';
 import { exec } from 'child_process';
 
 import { writeMessage, writeMessageValid } from './consoleLog.mjs';
-import { cleanUpMessage, finalMessage } from '../messages.mjs';
+import { cleanUpMessage } from '../messages.mjs';
 import { setupPath } from '../constants.mjs';
 
 export const startCleanUp = async () =>
@@ -13,7 +13,6 @@ export const startCleanUp = async () =>
             if (err) {
                 throw new Error(err);
             }
-            writeMessage(finalMessage);
 
             // remove all setup scripts from the 'setup' folder
             rimraf(setupPath)
