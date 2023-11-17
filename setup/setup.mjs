@@ -4,7 +4,7 @@ import { exec } from 'child_process';
 
 import prompts from 'prompts';
 import replace from 'replace';
-import rimraf from 'rimraf';
+import { rimraf } from 'rimraf';
 // import util from 'util';
 // import { exec } from 'child_process';
 
