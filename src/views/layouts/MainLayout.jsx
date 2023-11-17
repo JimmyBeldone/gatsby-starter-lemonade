@@ -11,6 +11,20 @@ console.log(
     "color: #40667c; font-size: 28px; margin: 20px auto;font-family: 'Montserrat'; font-weight: 500",
 );
 
+const consoleTable = [
+    {
+        kiwi: '🥝',
+        lemon: '🍋',
+        orange: '🍊',
+    },
+    {
+        kiwi: '🥝🥝',
+        lemon: '🍋',
+        orange: '🍊',
+    },
+];
+console.table(consoleTable);
+
 const MainLayout = ({ children }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
