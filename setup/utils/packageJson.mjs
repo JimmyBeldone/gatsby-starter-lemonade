@@ -22,7 +22,7 @@ const getAppName = () => {
     const __dirname = path.dirname(__filename);
 
     // Obtenir le nom du dossier de l'application
-    const appName = path.basename(path.resolve(__dirname, '..'));
+    const appName = path.basename(path.resolve(__dirname, '../..'));
     return appName;
 };
 

@@ -6,20 +6,24 @@ import { writeMessage, writeMessageValid } from './consoleLog.mjs';
 import { cleanUpMessage, finalMessage } from '../messages.mjs';
 import { setupPath } from '../constants.mjs';
 
-export const startCleanUp = async () => {
-    writeMessage(cleanUpMessage);
+export const startCleanUp = async () =>
+    new Promise((resolve) => {
+        writeMessage(cleanUpMessage);
+        exec('yarn remove chalk prompts replace -D', (err) => {
+            if (err) {
+                throw new Error(err);
+            }
+            writeMessage(finalMessage);
 
-    await exec('yarn remove chalk prompts replace -D').then(() => {
-        writeMessage(finalMessage);
-
-        // remove all setup scripts from the 'setup' folder
-        rimraf(setupPath)
-            .then(() => {
-                writeMessageValid('Setup folder Deleted');
-                return true;
-            })
-            .catch((error) => {
-                throw new Error(error);
-            });
+            // remove all setup scripts from the 'setup' folder
+            rimraf(setupPath)
+                .then(() => {
+                    writeMessageValid('Setup folder Deleted');
+                    return true;
+                })
+                .catch((error) => {
+                    throw new Error(error);
+                });
+            resolve();
+        });
     });
-};

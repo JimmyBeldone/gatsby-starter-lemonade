@@ -11,7 +11,9 @@ const setupStart = async () => {
 
     await startPackageJsonPrompts();
 
-    await startCleanUp();
+    if (!process.env.MODE === 'test') {
+        await startCleanUp();
+    }
 };
 
 setupStart()

@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import rimraf from 'rimraf';
+import { rimraf } from 'rimraf';
 import { exec } from 'child_process';
 import prompts from 'prompts';
 
