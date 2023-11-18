@@ -1,63 +1,68 @@
+// stylelint-disable CssSyntaxError
+
 html
-    font-family: sans-serif
-    -ms-text-size-adjust: 100%
-    -webkit-text-size-adjust: 100%
+    font-family sans-serif
+    text-size-adjust 100%
 
 body
-    margin: 0
-    color: rgba($darkNavy, .8)
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    text-rendering: optimizeLegibility
+    margin 0
+    color rgba($darkNavy, 0.8)
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+    text-rendering optimizelegibility
 
-html, body, #app
-    height: 100%
-    width: 100%
+html
+body
+#app
+    height 100%
+    width 100%
 
 #app
-    min-height: 100vh
+    min-height 100vh
     position relative
 
 #content-wrap
     padding-bottom $footerHeight
 
 #content
-    padding: 50px 0
+    padding 50px 0
 
 a
-    text-decoration: none
+    text-decoration none
     color $text
 
 .hidden
-    display: none
+    display none
 
 .container
-    width: 100%
-    margin-right: auto
-    margin-left: auto
-    padding-left: $containerPadding
-    padding-right: $containerPadding
+    width 100%
+    margin-right auto
+    margin-left auto
+    padding-left $containerPadding
+    padding-right $containerPadding
 
-    @media (min-width: 576px)
-        width: 540px
+    @media (width >= 576px)
+        width 540px
 
-    @media (min-width: 768px)
-        width: 720px
+    @media (width >= 768px)
+        width 720px
 
-    @media (min-width: 992px)
-        width: 970px
+    @media (width >= 992px)
+        width 970px
 
-    @media (min-width: 1200px)
-        width: 1140px
+    @media (width >= 1200px)
+        width 1140px
 
-    @media (min-width: 1590px)
-        width: 1536px
+    @media (width >= 1590px)
+        width 1536px
 
-button, input[type='submit'], input[type='reset']
-    background: none
-    color: inherit
-    border: 0
-    padding: 0
-    font: inherit
-    cursor: pointer
-    outline: inherit
+button
+input[type='submit']
+input[type='reset']
+    background none
+    color inherit
+    border 0
+    padding 0
+    font inherit
+    cursor pointer
+    outline inherit

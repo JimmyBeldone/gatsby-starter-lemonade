@@ -1,0 +1,7 @@
+{
+  "stylelint.validate": [
+
+      // ↓ Add "stylus" language.
+      "stylus"
+  ]
+}
