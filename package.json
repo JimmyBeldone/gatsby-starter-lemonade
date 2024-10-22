@@ -84,10 +84,10 @@
         "redux-persist": "^6.0.0"
     },
     "devDependencies": {
-        "@babel/core": "7.23.3",
-        "@babel/eslint-parser": "7.23.3",
-        "@babel/preset-env": "7.23.3",
-        "@babel/preset-react": "7.23.3",
+        "@babel/core": "7.25.9",
+        "@babel/eslint-parser": "7.25.9",
+        "@babel/preset-env": "7.25.9",
+        "@babel/preset-react": "7.25.9",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/git": "10.0.1",
         "babel-preset-gatsby": "^3.12.1",
