@@ -92,7 +92,7 @@
         "@semantic-release/git": "10.0.1",
         "babel-preset-gatsby": "^3.12.1",
         "chalk": "^5.3.0",
-        "commitizen": "4.3.0",
+        "commitizen": "4.3.2",
         "cross-env": "7.0.3",
         "cz-conventional-changelog": "3.3.0",
         "devmoji": "2.3.0",
